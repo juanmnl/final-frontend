@@ -28,6 +28,13 @@ Operadores
 - -- Resta tipográfica
 
 ### Texto (strings)
+El texto se encierra entre comillas. No importa sin son dobles o simples, siempre y cuando se comienze y termine con las mismas.
+'texto' es igual a "texto"
+'texto" -> error
+
+Operadores
+- + concatenación
+- \ escape de caractér (\n = salto de linea)
 
 
 ### Booleanos
