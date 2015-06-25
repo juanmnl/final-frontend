@@ -27,6 +27,7 @@ Explicar **PEMDAS**
 EJ.
 ```javascript
 1 + 10 * 4 + (1*6) /2;
+// 44
 ```
 
 Operadores
@@ -53,6 +54,7 @@ var texto2 = 'Esto también es un string válido';
 ```
 
 Operadores
+
 - + concatenación
 - \ escape de caractér (\n = salto de linea)
 
@@ -88,20 +90,24 @@ Operadores lógicos (binarios)
 
 - && y
 - || o
-- !true o !false
+- ! invierte o niega el valor adjunto. (!false == true)
 
 EJ.
 ```javascript
 console.log( 10 > 5 && 10 * 10 > 50 );
+// true
 ```
 
 Operadores conditionales (ternarios)
+
+Si es falso (false), nos regresa el primer valor, si es verdadero (true), el segundo.
 
 - ? :
 
 EJ.
 ```javascript
 console.log( false ? 1 : 2 );
+// 1
 ```
 
 ### Objetos
