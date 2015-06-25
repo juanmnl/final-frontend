@@ -1,4 +1,4 @@
-# Curso y libro sobre diseño y desarrollo frontend
+# WIP Curso y libro sobre diseño y desarrollo frontend
 
 ---
 
@@ -16,7 +16,11 @@
 
 ### HTML
 
+- **Introducción**
+
 ### CSS
+
+- **Introducción**
 
 ### JS
 
