@@ -1,4 +1,4 @@
-## Valores: tipos y operadores.
+## Valores, tipos y operadores.
 ---
 
 ### ¿Qué són los valores en javascript?
@@ -15,7 +15,19 @@ Existen 6 'tipos' básicos de valores.
 * Valores indefinidos
 
 ### Números
+Los números son valores que se componen de números enteros (1..13) o fracciones (3.141516).
+
+Limite de 64 bits.
+*(calculo de números)*
+
 Aritmética
+
+Explicar **PEMDAS**
+
+EJ.
+```javascript
+1 + 10 * 4 + (1*6) /2;
+```
 
 Operadores
 
@@ -28,7 +40,7 @@ Operadores
 - -- Resta tipográfica
 
 ### Texto (strings)
-El texto se encierra entre comillas. No importa sin son dobles o simples, siempre y cuando se comienze y termine con las mismas.
+El texto es un valor que se encierra entre comillas. No importa sin son dobles o simples, siempre y cuando se comienze y termine con las mismas.
 
 'texto' es igual a "texto"
 
@@ -40,6 +52,7 @@ Operadores
 
 
 ### Booleanos
+Es un valor que
 
 
 ### Objetos

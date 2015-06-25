@@ -28,7 +28,7 @@
 
 - **Introducción**
 
-- **Valores, tipos y operadores**
+- **Valores, tipos y operadores** *Comenzando*
 
 - **Estructura de programa**
 
