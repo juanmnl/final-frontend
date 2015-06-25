@@ -49,7 +49,7 @@ Es un valor de tipo texto, aquel que encierra entre comillas un grupo de letras 
 EJ.
 ```javascript
 var texto = "Esto es un string de texto";
-var texto2 = 'Esto también';
+var texto2 = 'Esto también es un string válido';
 ```
 
 Operadores
@@ -92,7 +92,7 @@ Operadores lógicos (binarios)
 
 EJ.
 ```javascript
-console.log(10 > 5 && 10 * 10 > 50);
+console.log( 10 > 5 && 10 * 10 > 50 );
 ```
 
 Operadores conditionales (ternarios)
@@ -101,7 +101,7 @@ Operadores conditionales (ternarios)
 
 EJ.
 ```javascript
-console.log(false ? 1:2);
+console.log( false ? 1 : 2 );
 ```
 
 ### Objetos
