@@ -4,14 +4,36 @@
   <meta charset="UTF-8">
   <title>Curso básico de frontend</title>
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <style>
+    .red { color:red; }
+    .black { color:black; }
+    .teal { color:teal; }
+  </style>
 </head>
 <body>
   <h1>Hola mundo!</h1>
-  <p>
+  <h3>
      Este es un curso básico de Frontend para la web.
+  </h3>
+
+  <p>
+    Este es un <b>documento HTML5</b> con <i>CSS y JS integrado</i>. <br>
+    Una de las versiones más simples, que integra los <u>formatos básicos</u> de la web.
   </p>
 
-  <button onclick="$('h1').css('color', 'red');">JS Sirve</button>
+  <hr>
+
+  <p>Con los siguientes botones podemos probar la interacción (JS) con el estilo y colores (CSS).</p>
+
+  <button class="red" onclick="$('h1').css('color', 'red');">H1 rojo</button>
+  <button class="black" onclick="$('h1').css('color', 'black');">H1 negro</button>
+  <button class="teal" onclick="$('h1').css('color', 'teal');">H1 teal</button>
+
+  <hr>
+
+  <footer>
+    Sígueme en <a href="www.twitter.com/_juanmnl">@_juanmnl</a>
+  </footer>
 
 </body>
 </html>
