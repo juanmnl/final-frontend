@@ -110,6 +110,9 @@ console.log( false ? 1 : 2 );
 // 1
 ```
 
+### Expresiones y "Statements"
+*(buscar palabra para reemplazar statements)*
+
 ### Objetos
 
 
