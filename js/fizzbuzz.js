@@ -11,8 +11,8 @@ for (var i = 1; i <= 100; i++) {
 }
 
 /*
- SIMPLER with FizzBuzz
- for when divisible by both
+ SIMPLER FizzBuzz
+ whitout -> 'fizzbuzz' and a var declaration
  */
 
 for (var n = 1; n <= 100; n++) {
