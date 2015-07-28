@@ -20,7 +20,18 @@ function isEven(n) {
     return isEven(n - 2);
 }
 
-// Count B's in a string and count chars
+// Count B's in a string
+
+function countBs(string) {
+  var count = 0;
+  for (i=0; i < string.length; i++) {
+    if (string.charAt(i) === "B")
+      count += 1;
+  }
+  return count;
+}
+
+// Count argument char in a given string, refactor countBs fn to work with it
 
 function countChar(string, ch) {
   var counted = 0;
