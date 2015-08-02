@@ -35,6 +35,25 @@ var argFunction = function(argOne, argTwo /* rest of anon arguments */) {
 
 
 
+// <- CREATING FUNCTIONS
+
+// constructor
+add = new Function("a", "b", "return a + b;");
+
+// expression
+var add = function(a, b) {
+  return a + b;
+};
+
+// function declaration
+function add(a, b) {
+  return a + b;
+};
+
+// <- CREATING FUNCTIONS END
+
+
+
 // <- DESTRUCTURING BASIC FUNCTIONS
 
 // Math.min own function
