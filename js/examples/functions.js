@@ -1,3 +1,7 @@
+// <- QUICK TOUR
+
+function functionDeclaration() {};
+
 // Functions can be assigned to variables
 var functionExpression = function () {};
 
@@ -26,6 +30,12 @@ var argFunction = function(argOne, argTwo /* rest of anon arguments */) {
   var args = Array.prototype.slice.call(arguments);
   var rest = args.slice(2);
 };
+
+// <- QUICK TOUR END
+
+
+
+// <- DESTRUCTURING BASIC FUNCTIONS
 
 // Math.min own function
 
@@ -73,3 +83,5 @@ function countChar(string, ch) {
 function countBs(string) {
   return countChar(string, "B");
 }
+
+// <- DESTRUCTURING BASIC FUNCTIONS END
