@@ -5,7 +5,7 @@ function sayHello() {
 
 function tryEventLoop() {
   console.log('Putting function in the task queue');
-  setTimeOut(function() {
+  setTimeout(function() {
     console.log('Task executed two seconds later');
   }, 2000);
 }
