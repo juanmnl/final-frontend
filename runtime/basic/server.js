@@ -17,7 +17,7 @@ http.createServer( function(req, res) {
       res.end(fs.readFileSync('app.js', 'utf8') + '\n');
       return;
     default:
-    res.writeHead(404, 'page not found :(');
+    res.writeHead(404, 'page not found :( ');
     res.end();
     return;
 

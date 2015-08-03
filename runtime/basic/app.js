@@ -1,3 +1,5 @@
+document.write('Open the console or the debugger ;) - [Cmd+opt+j]');
+
 function sayHello() {
   debugger;
   console.log('Hello modafoca!');
