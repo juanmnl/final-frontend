@@ -1,4 +1,4 @@
-LOADING AND READING EXTERNAL FILES
+// LOADING AND READING EXTERNAL FILES
 
 var fs = require('fs');
 fs.readFile('text.txt', function(err, data) {
