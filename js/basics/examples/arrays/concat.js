@@ -1,10 +1,9 @@
 // ARRAY Methods
-
 // CONCAT
 
 // Array.prototype.concat();
 // Call on an existing array and returns a new array as
-// as the original, plus any parameters that you pass it in.
+// the original, plus any parameters that you pass it in.
 var item = [1, 2];
 
 var newItems = items.concat(3, 4 ,5, 'string', undefined); // Multiple types
