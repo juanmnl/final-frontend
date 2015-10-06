@@ -1,5 +1,5 @@
 var http = require('http');
-var fs = require('fs');
+var fs   = require('fs');
 var path = require('path');
 
 http.createServer( function(req, res) {
@@ -24,4 +24,4 @@ http.createServer( function(req, res) {
   }
 }).listen(3000);
 
-console.log('Listening to hacker radio http://localhost:3000')
+console.log('Listening to hacker radio http://localhost:3000');

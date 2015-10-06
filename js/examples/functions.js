@@ -1,6 +1,6 @@
 // <- QUICK TOUR
 
-function functionDeclaration() {};
+function functionDeclaration() {}
 
 // Functions can be assigned to variables
 var functionExpression = function () {};
@@ -15,8 +15,8 @@ map(functionExpression);
 var wrapFunction = function(func) {
   return function() {
     func();
-  }
-}
+  };
+};
 
 // Functions can have names
 var namedFunction = function namedFunction() {};
@@ -36,7 +36,6 @@ var argFunction = function(argOne, argTwo /* rest of anon arguments */) {
 
 
 // <- CREATING FUNCTIONS
-
 // constructor
 add = new Function("a", "b", "return a + b;");
 
@@ -48,7 +47,7 @@ var add = function(a, b) {
 // function declaration
 function add(a, b) {
   return a + b;
-};
+}
 
 // <- CREATING FUNCTIONS END
 
