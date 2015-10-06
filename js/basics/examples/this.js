@@ -1,6 +1,18 @@
 // The this keyword is probably the most misunderstood aspect of JS
+// WHERE IS THE FUNCTION INVOKED?
 
-// IMPLICIT BINDING
+// EXAMPLE OF INVOKING SOMETHING (nothing to do with this keyword)
+// define func
+var sayName = function(name) {
+  console.log("Hello, " + name);
+  // We don't know what the value of name is, until it's invoked.
+};
+// invoke function with value
+sayName('Juanmnl'); // >_ "Hello Juanmnl"
+
+
+//////////////////////
+// IMPLICIT BINDING //
 // Look at the left of the Dot at call time
 
 //// EX.1
@@ -34,8 +46,8 @@ var you = {
 SayNameMixin(me); // decorate object me with func sayName()
 SayNameMixin(you);// decorate object you with func sayName()
 
-me.sayName(); // >_ Juanmnl
-you.sayName();// >_ Thom
+me.sayName(); // >_ "Juanmnl"
+you.sayName();// >_ "Thom"
 
 //// EX.3
 
@@ -57,8 +69,8 @@ var Person = function(name, age) { // Person 'class'
 };
 
 var thom = Person('Thom', 2);
-thom.sayName(); // >_ Thom
-thom.parent.sayName(); // >_ Janis
+thom.sayName(); // >_ "Thom"
+thom.parent.sayName(); // >_ "Janis"
 
 
 // Explicit Binding
@@ -66,20 +78,3 @@ thom.parent.sayName(); // >_ Janis
 // New Binding
 
 // Window Binding
-
-
-
-// WHERE IS THE FUNCTION INVOKED?
-
-
-
-// EXAMPLE OF INVOKING SOMETHING
-// define func
-var sayName = function(name) {
-  console.log("Hello, " + name);
-};
-
-// We don't know what name is, until it's invoked.
-
-// invoke func
-sayName('Juanmnl'); // >_ Hello Juanmnl
