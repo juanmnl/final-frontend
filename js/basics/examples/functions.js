@@ -1,4 +1,10 @@
-// Declare a function
+// STRIC MODE FUNCTION FORM
+(function () {
+   'use strict';
+   // this function is strict...
+}());
+//////////////////////////////////////////
+
 function foo() {
   // what does foo() does when called?
 }
