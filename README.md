@@ -1,8 +1,28 @@
 # WIP Curso y libro sobre diseño y desarrollo frontend
 
 ---
+## *New English index*
 
-## Detalles
+- INTRO  
+  - Intro programming  
+  - Statements  
+  - Expressions  
+  - Execution of a program  
+  - The Input/Output Game  
+
+
+- SYNTAX  
+  - Operators  
+  - Values & types  
+  - Comments  
+  - Variables & blocks  
+  - Conditional statements  
+  - Loops  
+  - Functions  
+  - Scope  
+  - ES6
+
+## Spanish section
 
 ### Diseño
 
