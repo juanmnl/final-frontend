@@ -3,6 +3,8 @@
 ---
 ## *New English index*
 
+### Javascript
+
 - INTRO  
   - Intro programming  
   - Statements  
@@ -23,19 +25,26 @@
   - ES6  
 
 
+### The DOM
+
 - DOM - **Exploring the DOM**  
 
+### Workflow
 
-- WEBPACK - **Rethinking Workflow**  
+- NPM@3 - **Rethinking Workflow I**  
 
+- WEBPACK - **Rethinking Workflow II**  
+
+### The User Interface
 
 - REACT - **Rethinking Best Practices**  
 
+- QUICK DESIGN w/BOOTSTRAP  
 
-- DESIGN (BOOTSTRAP)  
-
+### The User
 
 - UX RESEARCH  
 
+### Wash & Repeat
 
 - ABSTRACTING DESIGN  
