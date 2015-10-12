@@ -3,7 +3,7 @@
 
 ### ¿Qué són los valores en javascript?
 
-Se definen como 'valores' los pedazos de memoria en los que almacenamos datos.
+Se definen como 'valores' los fragmentos de memoria en los que almacenamos datos.
 
 Existen 6 'tipos' básicos de valores.
 

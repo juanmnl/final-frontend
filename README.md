@@ -1,4 +1,4 @@
-# WIP Curso y libro sobre diseño y desarrollo frontend
+# WIP The Final Frontend
 
 ---
 ## *New English index*
@@ -20,48 +20,22 @@
   - Loops  
   - Functions  
   - Scope  
-  - ES6
+  - ES6  
 
-## Spanish section
 
-### Diseño
+- DOM - **Exploring the DOM**  
 
-- Introducción
 
-- Teoría del color
+- WEBPACK - **Rethinking Workflow**  
 
-- Espacio y 'layouts'
 
-- RWD
+- REACT - **Rethinking Best Practices**  
 
-### HTML
 
-- **Introducción**
+- DESIGN (BOOTSTRAP)  
 
-### CSS
 
-- **Introducción**
+- UX RESEARCH  
 
-### JS
 
-*Primera parte*
-
-- **Introducción**
-
-- **Valores, tipos y operadores** *Comenzando*
-
-- **Estructura de programa**
-
-- **Funciones**
-
-- **Estructura de datos: objetos y arrays**
-
-- **Funciones de orden alto**
-
-- **Objetos**
-
-- **Bugs y manejo de errores**
-
-- **Expresiones regulares**
-
-- **Módulos**
+- ABSTRACTING DESIGN  
