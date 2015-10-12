@@ -1,4 +1,6 @@
 # REACT - A JAVASCRIPT LIBRARY FOR BUILDING USER INTERFACES
+**RETHINKING BEST PRACTICES**  
+
 Tell something about react and why it's the right paradigm for UI's
 
 ## <Component />

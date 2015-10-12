@@ -25,7 +25,7 @@ Aritmética
 Explicar **PEMDAS**
 
 EJ.
-```javascript
+```js
 1 + 10 * 4 + (1*6) /2;
 // 44
 ```
