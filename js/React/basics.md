@@ -35,11 +35,12 @@ ReactDOM.render(<App />, document.body);
 module.exports = App;
 ```
 
-### State
+### State - Mutable Data
+State should be managed by a parent component.
 
-### Proptypes
+### Proptypes Immutable Data
 
-Props are the properties that are passed down to a component.
+Props are the properties that are passed down to a child component.
 
 ```js
 ...
@@ -91,25 +92,6 @@ var App = React.createClass({
 ...
 ```
 
-#### customMethods()
-
-```js
-...
-
-var App = React.createClass({
-
-  ...
-
-  customMethods: function() {
-    //code here
-  },
-
-  ...
-});
-
-...
-```
-
 #### componentWillMount()
 
 ```js
@@ -120,25 +102,6 @@ var App = React.createClass({
   ...
 
   componentWillMount: function() {
-    //code here
-  },
-
-  ...
-});
-
-...
-```
-
-#### render()
-
-```js
-...
-
-var App = React.createClass({
-
-  ...
-
-  render: function() {
     //code here
   },
 
@@ -262,5 +225,42 @@ var App = React.createClass({
 ...
 ```
 
+#### customMethods()
+
+```js
+...
+
+var App = React.createClass({
+
+  ...
+
+  customMethods: function() {
+    //code here
+  },
+
+  ...
+});
+
+...
+```
+
+#### render()
+
+```js
+...
+
+var App = React.createClass({
+
+  ...
+
+  render: function() {
+    //code here
+  },
+
+  ...
+});
+
+...
+```
 
 ### Synthetic Events

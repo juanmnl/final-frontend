@@ -1,9 +1,7 @@
 # WIP The Final Frontend
 
----
-## *New English index*
 
-### Javascript
+### Javascript Park
 
 - INTRO  
   - Intro programming  
@@ -25,21 +23,25 @@
   - ES6  
 
 
-### The DOM
+### The temple of DOM
+
+- CONSOLE - **The Doors to the DOM**
 
 - DOM - **Exploring the DOM**  
 
-### Workflow
+### Rethinking the Workflow
 
-- NPM@3 - **Rethinking Workflow I**  
+- JS Modules
 
-- WEBPACK - **Rethinking Workflow II**  
+- NPM@3  
+
+- WEBPACK  
 
 ### The User Interface
 
 - REACT - **Rethinking Best Practices**  
 
-- QUICK DESIGN w/BOOTSTRAP  
+- DESIGN w/BOOTSTRAP - **Quick prototyping**  
 
 ### The User
 
