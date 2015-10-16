@@ -30,7 +30,9 @@ EJ.
 // 44
 ```
 
-Operadores
+Operadores  
+
+Los operadores son uno de los elementos fundamentales en cualquier lenguaje de programación, ya que son los que nos permiten trabajar con variables y datos.  
 
 - + suma
 - - resta
