@@ -1,12 +1,12 @@
-for (var i = 1; i <= 100; i++) {
-  if (i % 15 === 0) {
+for (var n = 1; n <= 100; i++) {
+  if (n % 15 === 0) {
     console.log('FizzBuzz');
-  } else if (i % 3 === 0) {
+  } else if (n % 3 === 0) {
     console.log('Fizz');
-  } else if (i % 5 === 0) {
+  } else if (n % 5 === 0) {
     console.log('Buzz');
   } else {
-    console.log(i);
+    console.log(n);
   }
 }
 
@@ -16,10 +16,10 @@ for (var i = 1; i <= 100; i++) {
  */
 
 for (n = 1; n <= 100; n++) {
-  var output = "";
+  var output = '';
   if (n % 3 === 0)
-    output += "Fizz";
+    output += 'Fizz';
   if (n % 5 === 0)
-    output += "Buzz";
+    output += 'Buzz';
   console.log(output || n);
 }
