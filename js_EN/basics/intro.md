@@ -13,10 +13,10 @@ Primitives are inmutable (cannot change once it has been created).
 
 ```js
 
-myString 		= "myString";
-myNumber		= 13;
-MyBoolean 	= true;
-MyNull 			= null;
+myString = "myString";
+myNumber = 13;
+MyBoolean = true;
+MyNull = null;
 MyUndefined = undefined;
 
 ```
