@@ -45,6 +45,21 @@ window.onload = function() {
 
 	context.fillRect(10, 10, 100, 200);
 	// Will render a v-rectangle to the DOM.
+
+	// DRAWING LINES
+
+	context.beginPath(); // Initialize drawing
+	context.moveTo(100, 100);
+	context.lineTo(300, 100);
+	context.lineTo(300, 200);
+	context.lineTo(100, 200);
+	context.lineTo(100, 100);
+	// context.closePath(); // Closes path if you don't specify the last line
+	context.stroke(); // Render drawing line by line
+	context.fill(); // Fill the body of the drawing
+	// context.strokeRect();
+	// context.fillRect();
+
 }
 
 ```
