@@ -18,7 +18,7 @@ var App = React.createClass({
   render: function() {
     return ( // Parenthesis are used so we can indent JSX properly.
       <div>
-        <h1>Hello world!</h1>
+      <h1>Hello world!</h1>
       </div>
     );
   }
@@ -59,7 +59,7 @@ var App = React.createClass({
   render: function () {
     return (
       <div>
-        <h1>{this.props.txt}</h1> // "Hello world" by default
+      <h1>{this.props.txt}</h1> // "Hello world" by default
       </div>
     );
   }

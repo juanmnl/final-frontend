@@ -17,14 +17,14 @@
 - Array of data Objects  
 ```json
 [
-	{
-		"name": "Juanmnl",
-		"type": "Human"
-	},
-	{
-		"name": "Thom",
-		"type": "Dog"
-	}
+  {
+    "name": "Juanmnl",
+    "type": "Human"
+  },
+  {
+    "name": "Thom",
+    "type": "Dog"
+  }
 ]
 ```   
 - Comments aren't permitted  
@@ -40,9 +40,9 @@
 
 ```javascript
 var myPerson = {
-	name  : 'Juanmnl',
-	type  : 'human',
-	gender: 'masculine'
+  name  : 'Juanmnl',
+  type  : 'human',
+  gender: 'masculine'
 };
 
 console.log(myPerson);

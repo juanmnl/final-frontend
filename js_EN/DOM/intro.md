@@ -69,8 +69,8 @@ The rest of the children of the (parent) element are knowns as (child nodes).
 
 - Open Chrome  
 - Open developer tools on Console tab.
-  - OSX -> **cmnd + opt + j**  
-  - Win -> **ctrl + alt + j**  
+- OSX -> **cmnd + opt + j**  
+- Win -> **ctrl + alt + j**  
 
 #### Elements
 {Explain in chrome}  

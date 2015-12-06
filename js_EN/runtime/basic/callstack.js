@@ -1,6 +1,6 @@
 /*
- CALL STACK IMPLEMENTATION IN JS
- What a lower level runtime method might do to call a function
+CALL STACK IMPLEMENTATION IN JS
+What a lower level runtime method might do to call a function
 */
 
 var heap = {}; //storage location in memory
