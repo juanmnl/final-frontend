@@ -4,22 +4,22 @@
 ### Javascript Park
 
 - INTRO  
-  - Intro programming  
-  - Statements  
-  - Expressions  
-  - Execution of a program  
-  - The Input/Output Game  
+  - Intro programming / Introducción a la programación  
+  - Statements / Declaraciones  
+  - Expressions / Expresiones  
+  - Execution of a program / Ejecución de un programa  
+  - The Input.Output Game / El juego de Entrada.Salida  
 
 
 - SYNTAX  
-  - Operators  
-  - Values & types  
-  - Comments  
-  - Variables & blocks  
-  - Conditional statements  
-  - Loops  
-  - Functions  
-  - Scope  
+  - Operators / Operadores  
+  - Values & types / Valores y tipos de valores  
+  - Comments / Comentarios  
+  - Variables & blocks / Variables y bloques  
+  - Conditional statements  Declaraciones condicionales  
+  - Loops / Búcles  
+  - Functions / Funciones  
+  - Scope / Alcance?  
   - ES6  
 
 
