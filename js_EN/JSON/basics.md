@@ -8,9 +8,9 @@
 
 ## Syntax
 
-**Names and Values always wrapped in double quotes ("...")** 
+**Names and Values always wrapped in double quotes ("...")**
 
-- Name/Value pairs -> each value is paired with a name
+- Name/Value pairs -> each value is paired with a name  
 `{ "name": "Juanmnl" }`  
 - Data Properties are separated by commas  
 `{ "name": "Thom", "type": "Dog" }`  

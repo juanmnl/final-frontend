@@ -40,7 +40,7 @@ State should be managed by a parent component.
 
 ### Proptypes Immutable Data
 
-Props are the properties that are passed down to a child component.
+Props are properties passed down to children components.
 
 ```js
 ...

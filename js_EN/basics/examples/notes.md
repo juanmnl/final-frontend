@@ -1,8 +1,8 @@
 
---  
-`javascript
+---  
+```javascript
   var a = 42;
-`
+```
 ### High Level
 `set the variable a to equal the number 42`
 

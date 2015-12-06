@@ -34,20 +34,20 @@ Operadores
 
 Los operadores son uno de los elementos fundamentales en cualquier lenguaje de programación, ya que son los que nos permiten trabajar con variables y datos.  
 
-- + suma
-- - resta
-- * multiplicación
-- / división
-- % módulo (resto)
-- ++ Suma tipográfica
-- -- Resta tipográfica
+- `+ suma`
+- `- resta`
+- `* multiplicación`
+- `/ división`
+- `% módulo (resto)`
+- `++ Suma tipográfica`
+- `-- Resta tipográfica`
 
 ### Texto (strings)
 Es un valor de tipo texto, aquel que encierra entre comillas un grupo de letras o números. No importa si las comillas son dobles o simples, siempre y cuando se comience y termine con las mismas.
 
-'texto' es igual a "texto"
+`'texto' es igual a "texto"`
 
-'texto" -> error
+`'texto" -> error`
 
 EJ.
 ```javascript
@@ -57,19 +57,19 @@ var texto2 = 'Esto también es un string válido';
 
 Operadores
 
-- + concatenación
-- \ escape de caractér (\n = salto de linea)
+- `+ concatenación`
+- `\ escape de caractér (\n = salto de linea)`
 
 
 ### Booleanos
 Es un valor de tipo booleano, aquel que se define como resultado de dos posibilidades:
 
-- True o False (verdadero o falso)
+- `True o False (verdadero o falso)`
 
 *Se puede determinar como una respuesta simple a una pregunta o el encendido y apagado de un aparato.*
 
-- Si o No
-- On o Off
+- `Si o No`
+- `On o Off`
 
 EJ.
 ```javascript
@@ -81,18 +81,18 @@ console.log( 2 > 3 );
 
 Operadores de comparación (binarios)
 
-- > mayor
-- < menor
-- >= mayor o igual
-- <= menor o igual
-- == igual
-- != no es igual
+- `> mayor`
+- `< menor`
+- `>= mayor o igual`
+- `<= menor o igual`
+- `== igual`
+- `!= no es igual`
 
 Operadores lógicos (binarios)
 
-- && y
-- || o
-- ! invierte o niega el valor adjunto. (!false == true)
+- `&& y`
+- `|| o`
+- `! invierte o niega el valor adjunto. (!false == true)`
 
 EJ.
 ```javascript
@@ -104,7 +104,7 @@ Operadores conditionales (ternarios)
 
 Si es falso (false), nos regresa el primer valor, si es verdadero (true), el segundo.
 
-- ? :
+- `? :`
 
 EJ.
 ```javascript
