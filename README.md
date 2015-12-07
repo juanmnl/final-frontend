@@ -1,7 +1,7 @@
 # WIP The Final Frontend
 
 
-### Javascript Park
+### JavaScript Park
 
 - INTRO  
 - Intro programming / Introducción a la programación  
