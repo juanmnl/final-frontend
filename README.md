@@ -1,10 +1,5 @@
-# WIP The Final Frontend
+# :notebook: The Final Frontend
 
-Anotaciones sobre el frontend en inglés y español.  
+Notes on different frontend things i've learnt.
 
-- Diseño  
-- HTML  
-- CSS  
-- JS
-
-:warning: **Siempre será un 'work-in-progress'** :warning:
+:warning: **Will always be a 'work-in-progress'** :warning:

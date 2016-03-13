@@ -25,23 +25,55 @@ for ( var i = 0; i < bands.length; i++ ) {
   if (bands[i].type === 'rock')
     rock.push(bands[i]);
 }
-
 /**
  * FILTER
+ * A method on the array object that filters the obj
  */
-
 // Composed fn
-var rock = bands.filter(function ( band ) {
+var rock = bands.filter(function( band ) {
   return band.type === 'rock';
 });
+// ES6
+var rock = bands.filter(( band ) => {
+  return band.type === 'rock';
+})
+// ES6 implicit return on one line
+var rock = bands.filter(( band ) => band.type === 'rock');
+// In functional programming in-fn-vars tend to be named with single chars
+var rock = bands.filter(( x ) => x.type === 'rock');
 ///////////////////////////////////
-
 // Separated logic and reusable fn
-var isRock = function ( band ) {
+var isRock = function( band ) {
   return band.type === 'rock';
 }
-
 var rock = bands.filter( isRock );
 // Inverse
 var otherTypes = bands.reject( isRock );
-///////////////////////////////////
+///////////////////////////////////////
+
+/**
+ * Make an array of all the bands names
+ */
+
+/**
+ * The for loop way
+ */
+var names = [];
+for ( var i = 0; i < bands.length; i++ ) {
+  names.push(bands[i].name);
+}
+/**
+ * MAP
+ * A method on the array object that transforms the original obj
+ */
+var names = bands.map(function( band ) {
+  return band.name;
+})
+// ES6
+var names = bands.map(( band ) => {
+  return band.name;
+})
+// ES6 implicit return on one line
+var names = bands.map(( band ) => band.name);
+// In functional programming in-fn-vars tend to be named with single chars
+var names = bands.map(( x ) => x.name);
