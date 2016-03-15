@@ -6,7 +6,7 @@
 //////////////////////////////////////////
 
 function foo() {
-  // what does foo() does when called?
+  // what does foo() when called?
 }
 // Declare a fucntion with a parameter
 function square(x) { // x = 10
@@ -47,7 +47,8 @@ printPrice();// >_"$309.95"
 // If total price is above 300,
 // apply free shipping.
 if (price > 300) {
-	console.log("Free shipping applied!");// >_ "Free shipping applied!"
+	console.log('Free shipping applied!');
+  // >_ "Free shipping applied!"
 }
 
 
@@ -75,13 +76,13 @@ function isEven(n) {
 function countBs(string) {
   var count = 0;
   for (i=0; i < string.length; i++) {
-    if (string.charAt(i) === "B")
+    if (string.charAt(i) === 'B')
       count += 1;
   }
   return count;
 }
 
-// Count argument char in a given string,
+// Count argument character in a given string,
 // refactor countBs fn to work with it.
 function countChar(string, ch) {
   var counted = 0;
@@ -92,5 +93,5 @@ function countChar(string, ch) {
 }
 //
 function countBs(string) {
-  return countChar(string, "B");
+  return countChar(string, 'B');
 }

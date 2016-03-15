@@ -37,7 +37,7 @@ var argFunction = function(argOne, argTwo /* rest of anon arguments */) {
 
 // <- CREATING FUNCTIONS
 // constructor
-add = new Function("a", "b", "return a + b;");
+add = new Function('a', 'b', 'return a + b;');
 
 // expression
 var add = function(a, b) {
@@ -82,7 +82,7 @@ function isEven(n) {
 function countBs(string) {
   var count = 0;
   for (i=0; i < string.length; i++) {
-    if (string.charAt(i) === "B")
+    if (string.charAt(i) === 'b')
     count += 1;
   }
   return count;
@@ -99,7 +99,7 @@ function countChar(string, ch) {
 }
 
 function countBs(string) {
-  return countChar(string, "B");
+  return countChar(string, 'B');
 }
 
 // <- DESTRUCTURING BASIC FUNCTIONS END

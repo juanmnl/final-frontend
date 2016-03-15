@@ -4,7 +4,7 @@
 // EXAMPLE OF INVOKING SOMETHING (nothing to do with this keyword)
 // define func
 var sayName = function(name) {
-  console.log("Hello, " + name);
+  console.log('Hello, ' + name);
   // We don't know what the value of name is, until it's invoked.
 };
 // invoke function with value
@@ -24,7 +24,8 @@ var me = {
   }
 };
 
-me.sayName(); // this keyword referencing what is left of the DOT
+me.sayName();
+// this keyword references to what is left of the DOT
 
 //// EX.2
 var SayNameMixin = function(obj) {
@@ -59,7 +60,7 @@ var Person = function(name, age) { // Person 'class'
       console.log(this.name);
     },
     parent: {
-      name: "Janis",
+      name: 'Janis',
       age: 27,
       sayName: function() {
         console.log(this.name);

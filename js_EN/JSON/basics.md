@@ -27,7 +27,7 @@
   }
 ]
 ```   
-- Comments aren't permitted  
+- Comments aren't allowed  
 
 #### JSON vs. XML  
 

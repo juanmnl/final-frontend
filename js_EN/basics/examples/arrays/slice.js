@@ -82,13 +82,14 @@ console.log(sections); // >_ ["name", "desuglify", "uppercase"]
 var ref = person[sections[0]];
 console.log(ref); // >_ "thom-yorke"
 // Take the reference and aplly filters.
-var output = sections
-              .slice(1)
-              .reduce(function(prev, next) {
-                if (filters[next]) {
-                  return filters[next].call(null, prev);
-                }
-                return prev;
-              }, ref);
+var output =
+          sections
+            .slice(1)
+            .reduce(function(prev, next) {
+              if (filters[next]) {
+                return filters[next].call(null, prev);
+              }
+              return prev;
+            }, ref);
 //
 console.log(output); // >_ THOM YORKE

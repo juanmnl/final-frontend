@@ -1,13 +1,9 @@
 ## Hola Mundo!
 
 Hola, mi nombre es Juan Manuel Cornejo Louiset y soy un diseñador que escribe código. Bueno, en realidad soy un ingeniero de sonido que cambió su vida por el diseño (gráfico y web) y que decidió cambiar todo de nuevo para programar cosas y usarlas en la web. También estudié fotografía, pero eso es para otro cuento.  
-Me encanta la programación, en ella encontré la profesión donde poder fundir toda la creatividad contenida en mi cabeza. No existe nada más extraordinario que  poder crear universos de diversas complejidades desde cero y sin la necesidad de elementos materiales –bueno, aparte de la computadora.
+Me encanta la programación, en ella encontré la profesión donde poder fundir toda la creatividad contenida en mi cabeza. No existe nada más extraordinario que  poder crear universos de diversas complejidades desde cero y sin la necesidad de elementos materiales –bueno, aparte del acceso a una computadora con internet.
 
-El camino del auto-aprendizaje es largo y tortuoso. Tiene pendientes largas y lentas, llenas de curvas y de baches, pero también bajadas –aunque cortas– llenas de velocidad y adrenalina.
-Es en ese aprendizaje donde entiendes que no existe nada más duro que encontrarse con una pared gnóstica. Cuando te pierdes en algún concepto que no puedes entender. Cuando no hay nadie a quien preguntar. Sin embargo, la sensación más fuerte y agradable que he tenido, es el éxtasis que recorre tu cuerpo cuando las cosas se vuelven claras, cuando comprendes todo. Todo. A lo que llamamos un momento 'ajá!'. <small>(Una especie de 'eureka!' para los más ancianitos)</small>
-
-Pensamiento creativo por las mañanas.  
-Pensamiento crítico por la tarde.
+privilege awareness [...]
 
 ## ¿Qué es la programación?
 
