@@ -1,4 +1,4 @@
-## Lo básico
+## Lo básico del lenguaje.
 
 #### Variables
 
