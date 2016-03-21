@@ -35,16 +35,16 @@ var morePeople = [ // Second array
 ];
 
 // If you want only people array.
-//
-// people.forEach(function(person) {
-//   console.log(person.name);
-// });
-//
+
+people.forEach(function(person) {
+  console.log(person.name);
+});
+
 // We could repeat the same forEach, but lets use concat.
-//
-// morePeople.forEach(function(person) {
-//   console.log(person.name);
-// });
+
+morePeople.forEach(function(person) {
+  console.log(person.name);
+});
 
 people
   .concat(morePeople)
