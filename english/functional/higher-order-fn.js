@@ -85,11 +85,11 @@ for ( var i = 0; i < bands.length; i++ ) {
  * the original object into a different array
  * with the same length as the original
  */
-var names = bands.map(function( band ) {
+var names = bands.map(function(band) {
   return band.name;
 })
 // ES6
-var names = bands.map(( band ) => {
+var names = bands.map((band) => {
   return band.name;
 })
 // ES6 implicit return on one line
