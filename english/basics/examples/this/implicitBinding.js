@@ -10,7 +10,6 @@ var sayName = function(name) {
 // invoke function with value
 sayName('Juanmnl'); // >_ "Hello Juanmnl"
 
-
 //////////////////////
 // IMPLICIT BINDING //
 // Look at the left of the Dot at call time
@@ -18,7 +17,7 @@ sayName('Juanmnl'); // >_ "Hello Juanmnl"
 //// EX.1
 var me = {
   name: 'Juanmnl',
-  age : 31,
+  age: 31,
   sayName: function() {
     console.log(this.name);
   }
@@ -45,14 +44,15 @@ var you = {
 };
 
 SayNameMixin(me); // decorate object me with func sayName()
-SayNameMixin(you);// decorate object you with func sayName()
+SayNameMixin(you); // decorate object you with func sayName()
 
 me.sayName(); // >_ "Juanmnl"
-you.sayName();// >_ "Thom"
+you.sayName(); // >_ "Thom"
 
 //// EX.3
 
-var Person = function(name, age) { // Person 'class'
+var Person = function(name, age) {
+  // Person 'class'
   return {
     name: name,
     age: age,
@@ -72,7 +72,6 @@ var Person = function(name, age) { // Person 'class'
 var thom = Person('Thom', 2);
 thom.sayName(); // >_ "Thom"
 thom.parent.sayName(); // >_ "Janis"
-
 
 // Explicit Binding
 

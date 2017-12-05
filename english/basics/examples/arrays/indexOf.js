@@ -17,10 +17,10 @@ console.log(family.indexOf('Juanmnl')); // >_ -1
 var isabelExists = family.indexOf('Isabel') > -1;
 // This expression will return true or false,
 // whether "Isabel" already exists or not in the [].
-console.log(isabelExists);  // >_ true
+console.log(isabelExists); // >_ true
 //
 var thomExists = family.indexOf('Thom') > -1;
-console.log(thomExists);  // >_ false
+console.log(thomExists); // >_ false
 //
 // Now we have a flag to use
 if (!thomExists) {
@@ -36,7 +36,6 @@ console.log(family.indexOf('Chicho', 1)); // >_ 1
 // The search will return the index position, no matter
 // where it starts. Index relative to the whole [].
 
-
 // Search for object references and other values
 var mom = {
   name: 'Marie'
@@ -51,7 +50,6 @@ var dog = {
 var family = [mom, bro, dog];
 // Look for the index of an object.
 console.log(family.indexOf(dog)); // >_ 2
-
 
 // You can use indexOf() to create a filter
 // Filter the events [] based on the extension of

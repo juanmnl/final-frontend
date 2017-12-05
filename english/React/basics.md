@@ -1,24 +1,28 @@
 # REACT - A JAVASCRIPT LIBRARY FOR BUILDING USER INTERFACES
-**RETHINKING BEST PRACTICES**  
+
+**RETHINKING BEST PRACTICES**
 
 Tell something about react and why it's the right paradigm for UI's
 
 ## <Component />
 
 **(ES5)**
+
 ### Basic Component
+
 ```js
 // Imports React from node modules.
-var React    = require('react');
+var React = require('react');
 // Call ReactDOM module for rendering methods.
 var ReactDOM = require('react-dom');
 
 // REACT'S MOST BASIC COMPONENT STRUCTURE.
 var App = React.createClass({
   render: function() {
-    return ( // Parenthesis are used so we can indent JSX properly.
+    return (
+      // Parenthesis are used so we can indent JSX properly.
       <div>
-      <h1>Hello world!</h1>
+        <h1>Hello world!</h1>
       </div>
     );
   }
@@ -36,6 +40,7 @@ module.exports = App;
 ```
 
 ### State - Mutable Data
+
 State should be managed by a parent component.
 
 ### Proptypes Immutable Data
@@ -71,6 +76,7 @@ var App = React.createClass({
 ### Refs
 
 ---
+
 ### Lyfecycle
 
 #### getInitialState()

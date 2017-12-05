@@ -1,50 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Curso básico de frontend</title>
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <style>
-      .red { color: red; }
-      .black { color: black; }
-      .teal { color: teal; }
-    </style>
 
-    <script>
+<head>
+  <meta charset="UTF-8">
+  <title>Curso básico de frontend</title>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <style>
+    .red {
+      color: red;
+    }
+
+    .black {
+      color: black;
+    }
+
+    .teal {
+      color: teal;
+    }
+  </style>
+
+  <script>
     console.log("Hola Mundo!");
-    </script>
-  </head>
-  <body>
-    <h1>Hola mundo!</h1>
-    <h3>
-      Esta es una guía básica del Frontend en la web.
-    </h3>
+  </script>
+</head>
 
-    <p>
-      Este es un <b>documento HTML5</b> con <i>CSS y JS integrado</i>. <br>
-      Una de las versiones más simples posibles, que integra los diferentes <u>formatos básicos</u> de la web. <br>
-      <ul>
-        <li>HTML5 - ESTRUCTURA</li>
-        <li>CSS - ESTILO Y PRESENTACIÓN</li>
-        <li>JS - INTERACCIÓN</li>
-      </ul>
-    </p>
+<body>
+  <h1>Hola mundo!</h1>
+  <h3>
+    Esta es una guía básica del Frontend en la web.
+  </h3>
 
-    <button onclick="alert('AHHHHH!!! El mundo se quema 🔥')" type="button" name="button">NO APLASTAR!</button>
+  <p>
+    Este es un
+    <b>documento HTML5</b> con
+    <i>CSS y JS integrado</i>.
+    <br> Una de las versiones más simples posibles, que integra los diferentes
+    <u>formatos básicos</u> de la web.
+    <br>
+    <ul>
+      <li>HTML5 - ESTRUCTURA</li>
+      <li>CSS - ESTILO Y PRESENTACIÓN</li>
+      <li>JS - INTERACCIÓN</li>
+    </ul>
+  </p>
 
-    <hr>
+  <button onclick="alert('AHHHHH!!! El mundo se quema 🔥')" type="button" name="button">NO APLASTAR!</button>
 
-    <p>Con los siguientes botones podemos probar la interacción (JS) con el estilo y colores (CSS).</p>
+  <hr>
 
-    <button class="red" onclick="$('h1').css('color', 'red');">H1 rojo</button>
-    <button class="black" onclick="$('h1').css('color', 'black');">H1 negro</button>
-    <button class="teal" onclick="$('h1').css('color', 'teal');">H1 teal</button>
+  <p>Con los siguientes botones podemos probar la interacción (JS) con el estilo y colores (CSS).</p>
 
-    <hr>
+  <button class="red" onclick="$('h1').css('color', 'red');">H1 rojo</button>
+  <button class="black" onclick="$('h1').css('color', 'black');">H1 negro</button>
+  <button class="teal" onclick="$('h1').css('color', 'teal');">H1 teal</button>
 
-    <footer>
-      Sígueme en <a href="https://www.twitter.com/_juanmnl">@_juanmnl</a>
-    </footer>
+  <hr>
 
-  </body>
+  <footer>
+    Sígueme en
+    <a href="https://www.twitter.com/_juanmnl">@_juanmnl</a>
+  </footer>
+
+</body>
+
 </html>

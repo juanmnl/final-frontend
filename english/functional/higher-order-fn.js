@@ -8,12 +8,12 @@
 ////////////////////////////////////////
 
 var bands = [
-  { name: 'Pearl Jam',   type: 'grunge' },
-  { name: 'Metallica',   type: 'metal'  },
-  { name: 'Slipknot',    type: 'metal'  },
-  { name: 'Nirvana',     type: 'grunge' },
-  { name: 'The Doors',   type: 'rock'   },
-  { name: 'Soda Stereo', type: 'rock'   }
+  { name: 'Pearl Jam', type: 'grunge' },
+  { name: 'Metallica', type: 'metal' },
+  { name: 'Slipknot', type: 'metal' },
+  { name: 'Nirvana', type: 'grunge' },
+  { name: 'The Doors', type: 'rock' },
+  { name: 'Soda Stereo', type: 'rock' }
 ];
 
 ////////////////////////////////////////
@@ -27,9 +27,8 @@ var bands = [
  * The for loop way
  */
 var rock = [];
-for ( var i = 0; i < bands.length; i++ ) {
-  if (bands[i].type === 'rock')
-    rock.push(bands[i]);
+for (var i = 0; i < bands.length; i++) {
+  if (bands[i].type === 'rock') rock.push(bands[i]);
 }
 /**
  * FILTER
@@ -38,31 +37,31 @@ for ( var i = 0; i < bands.length; i++ ) {
  * and transform it into a smaller array
  */
 // Composed fn
-var rock = bands.filter(function( band ) {
+var rock = bands.filter(function(band) {
   return band.type === 'rock';
 });
 // ES6
-var rock = bands.filter(( band ) => {
+var rock = bands.filter(band => {
   return band.type === 'rock';
-})
+});
 // ES6 implicit return on one line
-var rock = bands.filter(( band ) => band.type === 'rock');
+var rock = bands.filter(band => band.type === 'rock');
 // In functional programming in-fn-vars
 // tend to be named with single chars
-var rock = bands.filter(( x ) => x.type === 'rock');
+var rock = bands.filter(x => x.type === 'rock');
 ///////////////////////////////////
 // Separated logic and reusable fn
-var isRock = function( band ) {
+var isRock = function(band) {
   return band.type === 'rock';
-}
-var rock = bands.filter( isRock );
+};
+var rock = bands.filter(isRock);
 // The REJECT method will inverse the call
-var otherTypes = bands.reject( isRock );
+var otherTypes = bands.reject(isRock);
 // The FIND method will transform the array
 // into a single item array
-var nirvana = bands.find(function( band ) {
+var nirvana = bands.find(function(band) {
   return band.name === 'Nirvana';
-})
+});
 
 ///////////////////////////////////////
 ///////////////////////////////////////
@@ -75,7 +74,7 @@ var nirvana = bands.find(function( band ) {
  * The for loop way
  */
 var names = [];
-for ( var i = 0; i < bands.length; i++ ) {
+for (var i = 0; i < bands.length; i++) {
   names.push(bands[i].name);
 }
 /**
@@ -87,13 +86,13 @@ for ( var i = 0; i < bands.length; i++ ) {
  */
 var names = bands.map(function(band) {
   return band.name;
-})
+});
 // ES6
-var names = bands.map((band) => {
+var names = bands.map(band => {
   return band.name;
-})
+});
 // ES6 implicit return on one line
-var names = bands.map(( band ) => band.name);
+var names = bands.map(band => band.name);
 // In functional programming in-fn-vars
 // tend to be named with single chars
-var names = bands.map(( x ) => x.name);
+var names = bands.map(x => x.name);

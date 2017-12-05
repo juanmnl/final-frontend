@@ -19,7 +19,6 @@ copy[0] = 'x';
 console.log(copy); // >_ ["x", 2, 3, 4, 5, 6]
 console.log(original); // >_ [1, 2, 3, 4, 5]
 
-
 // If the original array contains object references
 // the reference itself it's copied not the object
 var person = { name: 'Thom' };
@@ -39,7 +38,6 @@ console.log(copy); // >_ [1, { name: 'Isabel' }]
 // This is because it's only a reference copy
 // to the original object.
 
-
 // The common use of slice() is not only to create
 // a copy, but instead, taking a subsection of the []
 var items = [1, 2, 3, 4, 5];
@@ -58,15 +56,13 @@ var iCopy = items.slice(-1);
 // begin from the last number backwards.
 console.log(iCopy); // >_ [5]
 
-
-
 // A common usage of the slice method.
-var person = { name: 'thom-yorke'};
+var person = { name: 'thom-yorke' };
 var filters = {
-  'desuglify': function desuglify(x) {
+  desuglify: function desuglify(x) {
     return x.replace('-', ' ');
   },
-  'uppercase': function uppercase(x) {
+  uppercase: function uppercase(x) {
     return x.toUpperCase();
   }
 };
@@ -82,14 +78,11 @@ console.log(sections); // >_ ["name", "desuglify", "uppercase"]
 var ref = person[sections[0]];
 console.log(ref); // >_ "thom-yorke"
 // Take the reference and aplly filters.
-var output =
-          sections
-            .slice(1)
-            .reduce(function(prev, next) {
-              if (filters[next]) {
-                return filters[next].call(null, prev);
-              }
-              return prev;
-            }, ref);
+var output = sections.slice(1).reduce(function(prev, next) {
+  if (filters[next]) {
+    return filters[next].call(null, prev);
+  }
+  return prev;
+}, ref);
 //
 console.log(output); // >_ THOM YORKE

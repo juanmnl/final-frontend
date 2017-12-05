@@ -1,10 +1,9 @@
 ## Canvas (html5)
 
-*Only works on HTML5.*  
+_Only works on HTML5._
 
+**html5 document**
 
-
-**html5 document**  
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -31,8 +30,8 @@ window.onload = function() {
   // document.body.appendChild(canvas);
 
   // id
-  var canvas = document.getElementById("canvas");
-  var context = canvas.getContext("2d");
+  var canvas = document.getElementById('canvas');
+  var context = canvas.getContext('2d');
 
   // If you haven't set the size on html tag, you can set it here
   // canvas.width = 600;
@@ -56,7 +55,5 @@ window.onload = function() {
   context.fill(); // Fill the body of the drawing
   // context.strokeRect();
   // context.fillRect();
-
-}
-
+};
 ```

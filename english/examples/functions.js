@@ -3,7 +3,7 @@
 function functionDeclaration() {}
 
 // Functions can be assigned to variables
-var functionExpression = function () {};
+var functionExpression = function() {};
 
 // Functions can be passed and assigned
 // to argument variables (like func below)
@@ -33,8 +33,6 @@ var argFunction = function(argOne, argTwo /* rest of anon arguments */) {
 
 // <- QUICK TOUR END
 
-
-
 // <- CREATING FUNCTIONS
 // constructor
 add = new Function('a', 'b', 'return a + b;');
@@ -51,39 +49,30 @@ function add(a, b) {
 
 // <- CREATING FUNCTIONS END
 
-
-
 // <- DESTRUCTURING BASIC FUNCTIONS
 
 // Math.min own function
 
 function min(a, b) {
-  if (a < b)
-  return a;
-  else
-  return b;
+  if (a < b) return a;
+  else return b;
 }
 
 // isEven
 
 function isEven(n) {
-  if (n === 0)
-  return true;
-  else if (n === 1)
-  return false;
-  else if (n < 0)
-  return isEven(-n);
-  else
-  return isEven(n - 2);
+  if (n === 0) return true;
+  else if (n === 1) return false;
+  else if (n < 0) return isEven(-n);
+  else return isEven(n - 2);
 }
 
 // Count B's in a string
 
 function countBs(string) {
   var count = 0;
-  for (i=0; i < string.length; i++) {
-    if (string.charAt(i) === 'b')
-    count += 1;
+  for (i = 0; i < string.length; i++) {
+    if (string.charAt(i) === 'b') count += 1;
   }
   return count;
 }
@@ -93,8 +82,7 @@ function countBs(string) {
 function countChar(string, ch) {
   var counted = 0;
   for (var i = 0; i < string.length; i++)
-  if (string.charAt(i) === ch)
-  counted += 1;
+    if (string.charAt(i) === ch) counted += 1;
   return counted;
 }
 

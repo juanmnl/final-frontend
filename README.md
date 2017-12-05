@@ -7,6 +7,7 @@ Notes on different front-end things i've learnt.
 ## Chapters:
 
 ### Basics
+
 * Arrays
   * Concat
   * Filter
@@ -22,21 +23,27 @@ Notes on different front-end things i've learnt.
 * Functions
 
 ### Runtime
+
 * Callstack
 * Event Loop
 
 ### DOM
+
 * General
 
 ### Json
+
 * General
 
 ### Canvas
+
 * Intro
 
 ### Functional
+
 * Higher Order Functions
 
 ### React
+
 * Intro
 * Container Components

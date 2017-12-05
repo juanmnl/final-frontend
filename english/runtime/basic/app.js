@@ -8,7 +8,6 @@ fs.readFile('text.txt', function(err, data) {
 
 console.log('Reading file ...');
 
-
 function sayHello() {
   debugger;
   console.log('Hello modafoca!');

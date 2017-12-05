@@ -2,19 +2,20 @@
 
 ## Why?
 
-- Objects that contain Properties and Values  
-- Readable Data Format  
-- Data can be used (fetched & parsed) by any programming language  
+* Objects that contain Properties and Values
+* Readable Data Format
+* Data can be used (fetched & parsed) by any programming language
 
 ## Syntax
 
 **Names and Values always wrapped in double quotes ("...")**
 
-- Name/Value pairs -> each value is paired with a name  
-`{ "name": "Juanmnl" }`  
-- Data Properties are separated by commas  
-`{ "name": "Thom", "type": "Dog" }`  
-- Array of data Objects  
+* Name/Value pairs -> each value is paired with a name\
+  `{ "name": "Juanmnl" }`
+* Data Properties are separated by commas\
+  `{ "name": "Thom", "type": "Dog" }`
+* Array of data Objects
+
 ```json
 [
   {
@@ -26,22 +27,22 @@
     "type": "Dog"
   }
 ]
-```   
-- Comments aren't allowed  
+```
 
-#### JSON vs. XML  
+* Comments aren't allowed
 
-- JSON can use arrays []  
-- JSON is shorter and more readable  
-- JSON doesn't require end-tags
+#### JSON vs. XML
 
+* JSON can use arrays []
+* JSON is shorter and more readable
+* JSON doesn't require end-tags
 
-### Objects in JS  
+### Objects in JS
 
 ```javascript
 var myPerson = {
-  name  : 'Juanmnl',
-  type  : 'human',
+  name: 'Juanmnl',
+  type: 'human',
   gender: 'masculine'
 };
 

@@ -6,7 +6,7 @@
 // the original, plus any parameters that you pass it in.
 var item = [1, 2];
 
-var newItems = items.concat(3, 4 ,5, 'string', undefined); // Multiple types
+var newItems = items.concat(3, 4, 5, 'string', undefined); // Multiple types
 console.log(newItems); // >_ [1, 2, 3, 4, 'string', undefined]
 // You can pass any type of value.
 
@@ -20,18 +20,19 @@ var arrayItems = items.concat([3, 4], [5, [6, 7]]); // Nested array
 console.log(arrayItems); // >_ [1, 2, 3, 4, 5, [6, 7]]
 // *Concat can flatten arrays, but only 1 value deep* !important
 
-
 // REAL EXAMPLE
 
-var people = [ // First array
-  { name: "Juanmnl" },
-  { name: "Marie"   }
+var people = [
+  // First array
+  { name: 'Juanmnl' },
+  { name: 'Marie' }
 ];
 
-var morePeople = [ // Second array
-  { name: "Isabel"  },
-  { name: "Camila"  },
-  { name: "Valeria" }
+var morePeople = [
+  // Second array
+  { name: 'Isabel' },
+  { name: 'Camila' },
+  { name: 'Valeria' }
 ];
 
 // If you want only people array.
@@ -46,11 +47,9 @@ morePeople.forEach(function(person) {
   console.log(person.name);
 });
 
-people
-  .concat(morePeople)
-  .forEach(function(person) {
-    console.log(person.name);
-  });
+people.concat(morePeople).forEach(function(person) {
+  console.log(person.name);
+});
 
 // >_ "Juanmnl"
 // >_ "Marie"
