@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>CSS Fundamentals</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+  <style>
+    h3.styleTag {
+      color: palevioletred;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>This is CSS</h1>
+  <h2>Cascading Style Sheets</h2>
+  <p>The
+    <em>adjectives</em> of the webpage. The skin.</p>
+  <h2>The General rule</h2>
+  <pre>
+    selector {
+      attribute: value;
+      otherAttribute: value;
+    }
+  </pre>
+  <h2>Injecting CSS into HTML</h2>
+  <ol>
+    <li>
+      <h3 style="color:rebeccapurple;">Inline Style</h3>
+      <ul>
+        <li>As a property of the HTML tag</li>
+      </ul>
+    </li>
+    <li>
+      <h3 class="styleTag">Style Tag</h3>
+      <ul>
+        <li>Inside HTML's Tags </li>
+      </ul>
+    </li>
+    <li>
+      <h3 class="styleSheet">Link Tag</h3>
+      <ul>
+        <li>Reference to another file</li>
+      </ul>
+    </li>
+  </ol>
+  <h2>Selectors</h2>
+  <ul>
+    <li>
+      <h3>Element</h3>
+      <p>Select all instances of a given element.</p>
+      <pre>
+        a {
+          font-size: 3em;
+        }
+      </pre>
+    </li>
+    <li>
+      <h3>#ID</h3>
+      <p>Target an element with a specific ID
+        <em>(only one –unique– ID name per page)</em>
+      </p>
+      <pre>
+          #someId {
+            text-decoration: none;
+          }
+        </pre>
+    </li>
+    <li>
+      <h3>.Class</h3>
+      <p>Selects all elements with a given class</p>
+      <pre>
+          .someClass {
+            display: absolute;
+          }
+        </pre>
+    </li>
+    <li>
+      <h3>::Pseudo</h3>
+      <pre>
+          div::after {
+            margin: 1em;
+          }
+        </pre>
+    </li>
+  </ul>
+  <h2>Colors in CSS</h2>
+  <ul>
+    <li>
+      <h3>HTML Colors:</h3>
+      <pre>red, blue, rebeccapurple, coral</pre>
+    </li>
+    <li>
+      <h3>Hexadecimal:</h3>
+      <pre>#000000, #FFFFFF, #4B0082</pre>
+      <pre>#redgreenblue: <span style="background-color:red;">__</span><span style="background-color:green;">__</span><span style="background-color:blue;">__</span></pre>
+      <pre>#RRGGBB - Range: 00-FF</pre>
+    </li>
+    <ul>
+      <li>
+        <strong>Decimal - Base 10:</strong>
+        <p>0, 1, 2, 3, 4, 5, 6, 7, 8, 9</p>
+      </li>
+      <li>
+        <strong>Binary - Base 2:</strong>
+        <p>0, 1</p>
+      </li>
+      <li>
+        <strong>HexaDecimal - Base 16:</strong>
+        <p>0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F</p>
+      </li>
+    </ul>
+    <li>
+      <h3>RGB/a:</h3>
+      <pre>rgb(255,255,255), rgba(0,0,0, 0.9)</pre>
+      <pre>rgb(Red, Green, Blue) - Range: 0-255</pre>
+    </li>
+    <li>
+      <h3>HSL/a:</h3>
+      <pre>hsl(210, 100%, 50%), hsla(240, 100%, 50%, .7)</pre>
+      <pre>hsl(Hue, Saturation, Light) - Range: 360deg + 0-100%</pre>
+    </li>
+    <li>
+      <h3>Alpha Channel:</h3>
+      <pre>rgb<strong>a</strong>(0,0,0, 0.9), hsl<strong>a</strong>(240, 100%, 50%, .7)</pre>
+      <pre>Range: 0.0-1</pre>
+    </li>
+  </ul>
+
+</body>
+
+</html>
