@@ -64,27 +64,117 @@
         <em>(only one –unique– ID name per page)</em>
       </p>
       <pre>
-          #someId {
-            text-decoration: none;
-          }
-        </pre>
+        #someId {
+          text-decoration: none;
+        }
+      </pre>
     </li>
     <li>
       <h3>.Class</h3>
       <p>Selects all elements with a given class</p>
       <pre>
-          .someClass {
-            display: absolute;
-          }
-        </pre>
+        .someClass {
+          display: absolute;
+        }
+      </pre>
     </li>
     <li>
-      <h3>::Pseudo</h3>
+      <h3>*Star</h3>
+      <p>Selects all elements within a given range</p>
       <pre>
-          div::after {
-            margin: 1em;
-          }
-        </pre>
+        * {
+          border: 1px solid black;
+        }
+      </pre>
+    </li>
+    <li>
+      <h3>Descendant</h3>
+      <p>Selects an element nested inside another element</p>
+      <pre>
+        li a {
+          text-decoration: none;
+        }
+      </pre>
+    </li>
+    <li>
+      <h3>+Adjacent</h3>
+      <p>Selects an element sibling of another element</p>
+      <pre>
+        h4 + ul {
+          font-size: 17px;
+        }
+      </pre>
+    </li>
+    <li>
+      <h3>[]Attribute</h3>
+      <p>Selects elements with a specific attribute</p>
+      <pre>
+        a[href="http://www.somelink.com/"] {
+          color: blue;
+        }
+
+        input[type="checkbox"] {
+          background-color: green;
+        }
+      </pre>
+    </li>
+    <li>
+      <h3>-nth of type</h3>
+      <p>Selects every element within a specific range</p>
+      <pre>
+        ul:nth-of-type(3) {
+          font-weight: 900;
+        }
+      </pre>
+    </li>
+    <li>
+      <h3>:Pseudo Classes &amp; Elements</h3>
+      <pre>
+        div::after {
+          margin: 1em;
+        }
+      </pre>
+    </li>
+  </ul>
+  <h2>Specificity</h2>
+  <ol>
+    <li>Inline Styles</li>
+    <li>IDs</li>
+    <li>Classes, attributes and pseudo-classes</li>
+    <li>Elements and pseudo-elements</li>
+  </ol>
+  <br>
+  <table border="1">
+    <thead>
+      <tr>
+        <td>Inline</td>
+        <td>IDs</td>
+        <td>Classes</td>
+        <td>Elements</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+    </tbody>
+  </table>
+  <ul>
+    <li>
+      <h3>Inheritance</h3>
+      <pre>ul { color: purple; } // li inside a ul inherit ul style</pre>
+    </li>
+    <li>
+      <h3>The closest element rule
+        <em>(specificity)</em>
+      </h3>
+      <p>The closest element to specify an attribute wins</p>
+      <pre>
+        body { color: red; } // everything inherits red from body
+        ul { color: purple; } // li inside a ul inherits ul style because it's the closest</pre>
     </li>
   </ul>
   <h2>Colors in CSS</h2>
