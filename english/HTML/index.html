@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Basics</title>
+  <link rel="stylesheet" href="./../../main.css">
 </head>
 
 <body>
@@ -134,7 +135,7 @@
       </ul>
       <br>
       <li>
-        <form action="http://www.wikipedia.org" method="post">
+        <form onsubmit="customShit(name);">
           <input name="wuuut" type="text" placeholder="Wuuuut?">
           <input type="submit">
         </form>
@@ -203,6 +204,14 @@
       </ul>
     </ul>
   </ul>
+
+  <script>
+    function customShit(e) {
+      console.log(e);
+      e.preventDefault();
+      return true;
+    }
+  </script>
 </body>
 
 </html>

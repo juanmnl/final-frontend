@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>CSS Fundamentals</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./../../main.css">
   <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
   <style>
     h3.styleTag {
@@ -168,7 +169,10 @@
   <ul>
     <li>
       <h3>Inheritance</h3>
-      <pre>ul { color: purple; } // li inside a ul inherit ul style</pre>
+      <pre>
+        ul {
+          color: purple;
+        } // li inside a ul inherit ul style</pre>
     </li>
     <li>
       <h3>The closest element rule
@@ -176,8 +180,13 @@
       </h3>
       <p>The closest element to specify an attribute wins</p>
       <pre>
-        body { color: red; } // everything inherits red from body
-        ul { color: purple; } // li inside a ul inherits ul style because it's the closest</pre>
+        body {
+          color: red;
+        } // everything inherits red from body
+        ul {
+          color: purple;
+        } // li inside a ul inherits ul style because it's the closest
+      </pre>
     </li>
   </ul>
   <h2>Colors in CSS</h2>

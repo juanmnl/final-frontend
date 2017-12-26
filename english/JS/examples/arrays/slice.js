@@ -43,7 +43,7 @@ console.log(copy); // >_ [1, { name: 'Isabel' }]
 var items = [1, 2, 3, 4, 5];
 // The slice method can take to parameters slice(start, end)
 var iCopy = items.slice(0, 1);
-// The end parameter does not include the item your ending on.
+// The end parameter does not include the item you're ending on.
 console.log(iCopy); // >_ [1]
 //
 var iCopy = items.slice(0, 3);
