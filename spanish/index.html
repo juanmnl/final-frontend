@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Curso básico de frontend</title>
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <style>
     .red {
       color: red;
@@ -25,7 +24,10 @@
 </head>
 
 <body>
-  <h1>Hola mundo!</h1>
+  <div class="back">
+    <a href="./../index.html">Index</a>
+  </div>
+  <h1 id="heading">Hola mundo!</h1>
   <h3>
     Esta es una guía básica del Frontend en la web.
   </h3>
@@ -50,9 +52,9 @@
 
   <p>Con los siguientes botones podemos probar la interacción (JS) con el estilo y colores (CSS).</p>
 
-  <button class="red" onclick="$('h1').css('color', 'red');">H1 rojo</button>
-  <button class="black" onclick="$('h1').css('color', 'black');">H1 negro</button>
-  <button class="teal" onclick="$('h1').css('color', 'teal');">H1 teal</button>
+  <button class="red" value="red" onclick="toggleClass(this.value);">H1 rojo</button>
+  <button class="black" value="black" onclick="toggleClass(this.value);">H1 negro</button>
+  <button class="teal" value="teal" onclick="toggleClass(this.value);">H1 teal</button>
 
   <hr>
 
@@ -60,6 +62,14 @@
     Sígueme en
     <a href="https://www.twitter.com/_juanmnl">@_juanmnl</a>
   </footer>
+
+  <script>
+    function toggleClass(value) {
+      const heading = document.getElementById('heading');
+      heading.classList = '';
+      heading.classList.toggle(value);
+    }
+  </script>
 
 </body>
 
