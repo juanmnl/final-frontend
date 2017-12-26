@@ -1,3 +1,59 @@
 h3.styleSheet {
   color: coral;
 }
+
+/* BOX MODEL */
+.margin,
+.border,
+.padding,
+.content {
+  /* text-align: center; */
+  color: white;
+  border: 1px dashed #fff;
+}
+
+.margin span,
+.border span,
+.padding span {
+  position: absolute;
+  top: 0.4em;
+}
+
+.margin {
+  background: coral;
+  padding: 2em;
+  position: relative;
+}
+
+.border {
+  background: teal;
+  border: 2px solid black;
+  padding: 2em;
+  position: relative;
+}
+
+.padding {
+  background: rebeccapurple;
+  padding: 2em;
+  position: relative;
+}
+
+.content {
+  background: #fff;
+  color: #000;
+  padding: 1em;
+}
+
+/* FLOATS */
+
+.woFloat p {
+  border: 1px solid black;
+  padding: 1em;
+}
+
+.float p {
+  border: 1px solid black;
+  float: left;
+  padding: 1em;
+  margin: 0.4em;
+}

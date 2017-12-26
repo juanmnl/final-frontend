@@ -25,10 +25,12 @@
     <em>adjectives</em> of the webpage. The skin.</p>
   <h2>The General rule</h2>
   <pre>
-    selector {
-      attribute: value;
-      otherAttribute: value;
-    }
+    <code>
+        selector {
+          attribute: value;
+          otherAttribute: value;
+        }
+    </code>
   </pre>
   <h2>Injecting CSS into HTML</h2>
   <ol>
@@ -57,9 +59,11 @@
       <h3>Element</h3>
       <p>Select all instances of a given element.</p>
       <pre>
-        a {
-          font-size: 3em;
-        }
+        <code>
+            a {
+              font-size: 3em;
+            }
+        </code>
       </pre>
     </li>
     <li>
@@ -68,75 +72,91 @@
         <em>(only one –unique– ID name per page)</em>
       </p>
       <pre>
-        #someId {
-          text-decoration: none;
-        }
+        <code>
+            #someId {
+              text-decoration: none;
+            }
+        </code>
       </pre>
     </li>
     <li>
       <h3>.Class</h3>
       <p>Selects all elements with a given class</p>
       <pre>
-        .someClass {
-          display: absolute;
-        }
+        <code>
+            .someClass {
+              display: absolute;
+            }
+        </code>
       </pre>
     </li>
     <li>
       <h3>*Star</h3>
       <p>Selects all elements within a given range</p>
       <pre>
-        * {
-          border: 1px solid black;
-        }
+        <code>
+            * {
+              border: 1px solid black;
+            }
+        </code>
       </pre>
     </li>
     <li>
       <h3>Descendant</h3>
       <p>Selects an element nested inside another element</p>
       <pre>
-        li a {
-          text-decoration: none;
-        }
+        <code>
+            li a {
+              text-decoration: none;
+            }
+        </code>
       </pre>
     </li>
     <li>
       <h3>+Adjacent</h3>
       <p>Selects an element sibling of another element</p>
       <pre>
-        h4 + ul {
-          font-size: 17px;
-        }
+        <code>
+            h4 + ul {
+              font-size: 17px;
+            }
+        </code>
       </pre>
     </li>
     <li>
       <h3>[]Attribute</h3>
       <p>Selects elements with a specific attribute</p>
       <pre>
-        a[href="http://www.somelink.com/"] {
-          color: blue;
-        }
-
-        input[type="checkbox"] {
-          background-color: green;
-        }
+        <code>
+            a[href="http://www.somelink.com/"] {
+              color: blue;
+            }
+    
+            input[type="checkbox"] {
+              background-color: green;
+            }
+        </code>
       </pre>
     </li>
     <li>
       <h3>-nth of type</h3>
       <p>Selects every element within a specific range</p>
       <pre>
-        ul:nth-of-type(3) {
-          font-weight: 900;
-        }
+        <code>
+            ul:nth-of-type(3) {
+              font-weight: 900;
+            }
+        </code>
       </pre>
     </li>
     <li>
       <h3>:Pseudo Classes &amp; Elements</h3>
       <pre>
-        div::after {
-          margin: 1em;
-        }
+        <code>
+            div::after {
+              margin: 1em;
+            }
+        </code>
       </pre>
     </li>
   </ul>
@@ -170,9 +190,12 @@
     <li>
       <h3>Inheritance</h3>
       <pre>
-        ul {
-          color: purple;
-        } // li inside a ul inherit ul style</pre>
+        <code>
+            ul {
+              color: purple;
+            } // li inside a ul inherit ul style
+        </code>
+      </pre>
     </li>
     <li>
       <h3>The closest element rule
@@ -180,15 +203,102 @@
       </h3>
       <p>The closest element to specify an attribute wins</p>
       <pre>
-        body {
-          color: red;
-        } // everything inherits red from body
-        ul {
-          color: purple;
-        } // li inside a ul inherits ul style because it's the closest
+        <code>
+            body {
+              color: red;
+            } // everything inherits red from body
+            ul {
+              color: purple;
+            } // li inside a ul inherits ul style because it's the closest
+        </code>
       </pre>
     </li>
   </ul>
+
+  <h2>The Box Model</h2>
+  <p>In a document, each element is represented as a rectangular box.</p>
+  <p>In CSS each of these boxes is described using the standard
+    <em>Box Model</em>.</p>
+  <p>Each box has four edges:</p>
+  <ul>
+    <li>Margin Edge</li>
+    <li>Border Edge</li>
+    <li>Padding Edge</li>
+    <li>Content Edge</li>
+  </ul>
+
+  <div class="margin">
+    <span>Margin</span>
+    <div class="border">
+      <span>Border</span>
+      <div class="padding">
+        <span>Padding</span>
+        <div class="content">Element</div>
+      </div>
+    </div>
+  </div>
+
+  <h2>Floats</h2>
+  <p>
+    Interrupts the
+    <em>normal</em> document flow and stacks things horizontally instead of vertically
+  </p>
+
+  <div class="woFloat">
+    <h3>Without Float</h3>
+    <h4>Full width of the parent element</h4>
+    <p>Normal Vertical Flow</p>
+    <p>Normal Vertical Flow</p>
+  </div>
+
+  <div class="float">
+    <h3>With Float</h3>
+    <h4>Width of the content</h4>
+    <p>Added float for Horizontal Flow</p>
+    <p>Added float for Horizontal Flow</p>
+  </div>
+
+  <div class="cf"></div>
+
+  <h3>Clearfix hack after a float:</h3>
+  <pre>
+    <code>
+        &lsaquo;div class="cf"&rsaquo;&lsaquo;/div&rsaquo;
+    </code>
+  </pre>
+  <pre>
+    <code>
+        .cf:before,
+        .cf:after {
+            content: " "; /* 1 */
+            display: table; /* 2 */
+        }
+        
+        .cf:after {
+            clear: both;
+        }
+    </code>
+  </pre>
+
+  <h2>Units</h2>
+  <p>Many units for different use-cases.
+    <em>Not all atribbutes accept the same kind of units</em>
+  </p>
+  <ul>
+    <li>Pixels:
+      <strong>[value]px</strong>
+    </li>
+    <li>EM - Inherited Font Size:
+      <strong>[value]em</strong>
+    </li>
+    <li>REM - Root Font Size:
+      <strong>[value]rem</strong>
+    </li>
+    <li>% - Percentage of the parent element:
+      <strong>[value]%</strong>
+    </li>
+  </ul>
+
   <h2>Colors in CSS</h2>
   <ul>
     <li>
@@ -198,7 +308,8 @@
     <li>
       <h3>Hexadecimal:</h3>
       <pre>#000000, #FFFFFF, #4B0082</pre>
-      <pre>#redgreenblue: <span style="background-color:red;">__</span><span style="background-color:green;">__</span><span style="background-color:blue;">__</span></pre>
+      <pre>#redgreenblue:<span style="background-color:red;">__</span><span style="background-color:green;">__</span><span style="background-color:blue;">__</span>
+      </pre>
       <pre>#RRGGBB - Range: 00-FF</pre>
     </li>
     <ul>
@@ -231,7 +342,6 @@
       <pre>Range: 0.0-1</pre>
     </li>
   </ul>
-
 </body>
 
 </html>
