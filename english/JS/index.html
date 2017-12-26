@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JS Fundamentals</title>
+  <link rel="stylesheet" href="./../../main.css">
+</head>
+
+<body>
+  <div class="back">
+    <a href="./../../index.html">Index</a>
+  </div>
+  <h2>JavaScript</h2>
+  <ul>
+    <li>Logic &amp; Interaction</li>
+    <li>Describes the behavior</li>
+    <li>The
+      <em>Verbs</em> of a webpage</li>
+  </ul>
+
+  <ol>
+    <li>
+      <h3>The Console</h3>
+    </li>
+    <p>To interact, test and understand JS, we use the browser console.</p>
+    <pre>cmd + option + J - Chrome Console</pre>
+    <li>
+      <h3>Primitives</h3>
+    </li>
+    <p>There are
+      <strong>5</strong> primitive data types</p>
+    <ul>
+      <li>
+        <strong>Numbers</strong>
+      </li>
+      <p>Wholes, fractions &amp; Negative numbers</p>
+      <pre>
+        <code>
+          // numbers
+          4
+          9.2
+          -3
+
+          // Math
+          4 + 10 // 14
+          6/2 // 3
+          5 * 2 // 10
+
+          // Modulo - Remainder
+          10 % 3 // 1
+          24 % 2 // 0
+          15 % 11 // 4
+        </code>
+      </pre>
+      <li>
+        <strong>Strings</strong>
+      </li>
+      <p>Any character inside quotes "...", '...'
+        <em>(even numbers)</em>
+      </p>
+      <pre>
+        <code>
+          // Single or Double quotes
+          "Hello World"
+          'Hello World'
+
+          // Concatenation
+          "Thom" + " " + "Yorke" // "Thom Yorke"
+
+          // Escape characters
+          "Singing \"This is how we do it!\""
+          "This is a backslash: \\"
+
+          // Length Property
+          "Hello World".lenght // 11
+
+          // Access individual chars with []
+          "hello"[0] // "h"
+          "hello"[3] // "l"
+        </code>
+      </pre>
+      <li>
+        <strong>Booleans</strong>
+      </li>
+      <p>Only have two options, true or false
+        <em>(on or off)</em>
+      </p>
+      <li>
+        <strong>Null</strong>
+      </li>
+      <p>
+        Null is "explicitly nothing".
+      </p>
+      <pre>
+        <code>
+          var currentPlayer = "Juan";
+          currentPlayer = null; // game over
+        </code>
+      </pre>
+      <li>
+        <strong>Undefined</strong>
+      </li>
+      <p>Variables that are declared but not initialized.</p>
+      <pre>
+        <code>
+          var name;
+          var age;
+        </code>
+      </pre>
+    </ul>
+    <li>
+      <h3>Variables</h3>
+    </li>
+    <p>Variables are containers that store values</p>
+    <p>There are different conventions to write variables in js:</p>
+    <ol>
+      <li>camelCase
+        <em>(most common)</em>
+      </li>
+      <li>snake_case</li>
+      <li>kebab-case</li>
+    </ol>
+    <br>
+    <pre>var myVariable = myValue;</pre>
+    <p>They can store any kind of value</p>
+    <pre>
+      <code>
+        var name = "juan";
+        var age = 33;
+        var isMarried = false;
+      </code>
+    </pre>
+    <p>We can recall a stored value by calling the variable name:</p>
+    <pre>
+      <code>
+        var name = "Thom";
+        "Hello " + name; // "Hello Thom"
+
+        var num = 42;
+        num + 3; // 45
+      </code>
+    </pre>
+    <p>We can also
+      <em>update</em> a value in axisting variables:</p>
+    <pre>
+      <code>
+        var name = "Juan";
+        name; // "Juan"
+
+        name = "Jack";
+        name; // "Jack"
+      </code>
+    </pre>
+    <p>Variables can change their type (Dynamic typing)</p>
+    <h4>ES6 added new variable types</h4>
+    <ul>
+      <li>
+        <strong>let</strong>
+      </li>
+      <p>Block-scoped variable</p>
+      <li>
+        <strong>const</strong>
+      </li>
+      <p>Global
+        <em>(immutable/constant)</em> variable</p>
+    </ul>
+    <li>
+      <h3>Built-in Methods</h3>
+    </li>
+    <p>There are a lot of methods, but the most common built-in methods in the browser are:</p>
+    <ul>
+      <li>
+        <strong>clear();</strong>
+      </li>
+      <p>Resets the console.</p>
+      <li>
+        <strong>alert();</strong>
+      </li>
+      <p>Shows the user a message.</p>
+      <li>
+        <strong>prompt();</strong>
+      </li>
+      <p>Asks the user for input.</p>
+      <li>
+        <strong>console.log();</strong>
+      </li>
+      <p>Writes a message to the console.</p>
+    </ul>
+    <pre>
+      <code>
+        var userName = prompt("Hello, what's your name?");
+        console.log("I'm Console, nice to meet you " + userName);
+        alert("I'm Alert, also nice to meet you " + userName);
+
+        // EXERCISE
+        // prompt age
+        var age = prompt("What's your age");
+
+        // eval age in days + leap years
+        var ageInDays = age * 365.25;
+
+        // print years in days
+        console.log("You've lived roughly: " + ageInDays + " days");
+      </code>
+    </pre>
+    <li>
+      <h3>Including JS files</h3>
+    </li>
+    <p>We can write JS directly between
+      <strong>script tags</strong>, but it can become difficult to mantain.</p>
+    <pre>
+      <code>
+          &lsaquo;script&rsaquo;
+            // your JS code
+          &lsaquo;/script&rsaquo;
+      </code>
+    </pre>
+    <p>Most of the time we include a separate JS file with the HTML
+      <strong>script</strong> tag.</p>
+    <pre>
+      <code>
+        &lsaquo;script src="path/to/file" type="text/javascript"&rsaquo;&lsaquo;/script&rsaquo;
+      </code>
+    </pre>
+  </ol>
+
+</body>
+
+</html>
