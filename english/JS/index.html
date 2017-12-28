@@ -27,6 +27,7 @@
     </li>
     <p>To interact, test and understand JS, we use the browser console.</p>
     <pre>cmd + option + J - Chrome Console</pre>
+    <hr>
     <li>
       <h3>Primitives</h3>
     </li>
@@ -111,6 +112,7 @@
         </code>
       </pre>
     </ul>
+    <hr>
     <li>
       <h3>Variables</h3>
     </li>
@@ -167,6 +169,7 @@
       <p>Global
         <em>(immutable/constant)</em> variable</p>
     </ul>
+    <hr>
     <li>
       <h3>Built-in Methods</h3>
     </li>
@@ -206,6 +209,7 @@
         console.log("You've lived roughly: " + ageInDays + " days");
       </code>
     </pre>
+    <hr>
     <li>
       <h3>Including JS files</h3>
     </li>
@@ -213,18 +217,239 @@
       <strong>script tags</strong>, but it can become difficult to mantain.</p>
     <pre>
       <code>
-          &lsaquo;script&rsaquo;
+          &lt;script&gt;
             // your JS code
-          &lsaquo;/script&rsaquo;
+          &lt;/script&gt;
       </code>
     </pre>
     <p>Most of the time we include a separate JS file with the HTML
       <strong>script</strong> tag.</p>
     <pre>
       <code>
-        &lsaquo;script src="path/to/file" type="text/javascript"&rsaquo;&lsaquo;/script&rsaquo;
+        &lt;script src="path/to/file" type="text/javascript"&gt;&lt;/script&gt;
       </code>
     </pre>
+    <hr>
+    <li>
+      <h3>Control Flow</h3>
+    </li>
+    <h4>Boolean Logic</h4>
+    <p>Statements –or a combination of statements– that evaluate to either
+      <em>true</em> or
+      <em>false</em>.
+    </p>
+    <ul>
+      <li>
+        <strong>Comparison operators</strong>
+      </li>
+      <ul>
+        <li>> Greater than</li>
+        <li>>= Greater than or equal to</li>
+        <li>
+          &lt; Less than</li>
+        <li>
+          &lt;= Less than or equal to</li>
+        </li>
+        <li>
+          == Equal to
+          <em>(performs
+            <strong>type coercion</strong>)</em>
+        </li>
+        <li>!= NOT Equal to</li>
+        <li>=== Equal Value and Type</li>
+        <li>!== NOT Equal Value and Type</li>
+        <br>
+        <strong>Weird things:</strong>
+        <pre>
+          <code>
+            true == "1" // true
+            0 == false // true
+            null == undefined // true
+            NaN == NaN // false
+          </code>
+        </pre>
+      </ul>
+      <br>
+      <li>
+        <strong>Logical operators</strong>
+      </li>
+      <ul>
+        <li>&amp;&amp; And</li>
+        <li>|| Or</li>
+        <li>! Not</li>
+        <br>
+        <strong>Every Value in JS is inherently truthy or falsy when evaluated in a boolean context:</strong>
+        <p>
+          <em>If false, it is trhuthy and vice-versa</em>
+        </p>
+        <pre>
+          <code>
+            !"hello world" // false 
+            !"" // true
+            !null //true
+            !0 //true
+            !-1 // true
+            !NaN // true
+          </code>
+        </pre>
+        <p>Falsy Values:</p>
+        <ul>
+          <li>false</li>
+          <li>0</li>
+          <li>""</li>
+          <li>null</li>
+          <li>undefined</li>
+          <li>NaN</li>
+        </ul>
+        <p>
+          <em>
+            <strong>Everything else is truthy</strong>
+          </em>
+        </p>
+        <pre>
+          <code>
+            var str = "";
+            var msg = "wuuut!";
+            var isFunny = "false";
+
+            !((str || msg) &amp;&amp; isFunny) //?
+          </code>
+        </pre>
+      </ul>
+
+      <br>
+
+      <li>
+        <strong>Conditional Statements</strong>
+      </li>
+      <p>Making decisions with code</p>
+      <h4>if Statements</h4>
+      <pre>
+          <code>
+            if (someCondition) {
+              // execute this code
+            } else {
+              // execute this one
+            }
+
+            // smallest way
+
+            if (someCondition) {
+              // run this
+            }
+
+            // long way
+
+            if (someCondition) {
+              // execute this code
+            } else if (anotherCondition) {
+              // execute this other thing
+            } else {
+              // execute this one
+            }
+
+            ...
+          </code>
+        </pre>
+      <ul>
+        <li>
+          <strong>if</strong>
+          <p>If this returns
+            <em>true</em>, nothing else runs</p>
+        </li>
+        <li>
+          <strong>else if</strong>
+          <p>if this returns
+            <em>true</em>, nothing else runs</p>
+        </li>
+        <li>
+          <strong>else</strong>
+        </li>
+      </ul>
+      <pre>
+        <code>
+            // Get age and convert it to a Number (prompt always returns a String)
+            var age = Number(prompt("What is your age?"));
+             
+            // If age is negative
+            if(age &lt; 0) {
+             console.log("Come back once you're out of the womb");
+            }
+             
+            // If age is 21  
+            if(age === 21) {
+             console.log("Happy 21st Birthday!");
+            }
+             
+            // If age is odd
+            //(not evenly divisible by two)
+            if(age % 2 !== 0) {
+             console.log("Your age is odd!");
+            }
+             
+            // If age is a perfect square
+            if(age % Math.sqrt(age) === 0) {
+              console.log("Your age is a perfect square!");
+            }
+        </code>
+      </pre>
+      <br>
+      <li>
+        <strong>Loops</strong>
+      </li>
+      <p>Repeating things</p>
+      <h4>while loops</h4>
+      <pre>
+        <code>
+          while(someCondition) {
+            // execute this code
+          }
+
+          // Printing numbers from 1 to 5
+          var count = 1;
+
+          while(count &lt; 6) {
+            console.log("Count is: " + count);
+            count++;
+          }
+
+          // Printing each character in a string
+          var str = "Hello";
+          var count = 0;
+
+          while(count &lt; str.length) {
+            console.log(str[count]);
+            count++;
+          }
+        </code>
+      </pre>
+      <p>Beware of
+        <em>infinite loops</em>. If the condition is never true, it will repeat until you burn your computer :P</p>
+      <br>
+      <h4>for loops</h4>
+      <pre>
+        <code>
+          for(init; condition; step) {
+            // execute this code
+          }
+          
+          // Printing numbers from 1 to 5
+          for(var count = 1; count &lt; 6; count++) {
+            console.log(count);
+          }
+
+          // Printing each character in a string
+          var str = "Hello";
+          for(var i = 0; i &lt; str.length; i++) {
+            console.log(str[i]);
+          }
+        </code>
+      </pre>
+    </ul>
+    <hr>
+    <li>
+      <h3>Functions</h3>
+    </li>
   </ol>
 
 </body>
