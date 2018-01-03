@@ -579,6 +579,136 @@
     <br>
     <h4>Higher Order Functions</h4>
     <p>Functions that take a fn() as an argument, or return another fn().</p>
+    <pre>
+      <code>
+        // setInterval();
+        function sing() {
+          console.log('🎶');
+          console.log('lalala! lala! la!');
+          console.log('🎶');
+        }
+
+        // we pass the sing fn() without parens, because we don't execute the fn(). setInterval() does.
+        setInterval(sing, 2000);
+
+        // We can also define the function inside setInterval() as an anonymous fn()
+        setInterval(function() {
+          console.log("I'm an anonymous function!");
+        }, 3000);
+      </code>
+    </pre>
+    <hr>
+    <li>
+      <h3>Arrays</h3>
+    </li>
+    <p>The first Data Structure. Group data in comma-separated lists.</p>
+    <p>Arrays are zero-indexed.</p>
+    <pre>
+      <code>
+        // Initialize an empty array
+        var friends = [];
+        var friends = new Array();
+        // Define the array
+        var friends = ["Tron", "Morlis", "Alvaro", "Irene", "Carlos"];
+
+        console.log(friends[1]); // "Morlis"
+
+        // Update or add values
+        friends[0] = "Jose";
+        var friends = ["Jose", "Morlis", "Alvaro", "Irene", "Carlos"];
+
+        // Length Property
+        friends.length; // 5
+
+        // Can contain any type of data
+        var randomArr = [11, "Hello", true, {object: 1}, ["otherArrays"], null];
+      </code>
+    </pre>
+    <br>
+    <h4>Built-in Methods</h4>
+    <p>JS has many built-in methods to manipulate arrays. These are the 6 most common.</p>
+    <ul>
+      <li>
+        <strong>push/pop</strong>
+      </li>
+      <p>PUSH: Adds to the end of an array</p>
+      <pre>
+        <code>
+          var colors = ["red", "green", "blue"];
+          colors.push("yellow");
+          // ["red", "green", "blue", "yellow"]
+        </code>
+      </pre>
+      <p>POP: Removes the last item from the array</p>
+      <pre>
+        <code>
+          var colors = ["red", "green", "blue", "yellow"];
+          colors.pop();
+          // ["red", "green", "blue"]
+
+          // pop() returns the removed el
+          var colorBlue = colors.pop(); // "blue"
+        </code>
+      </pre>
+      <br>
+      <li>
+        <strong>shift/unshift</strong>
+      </li>
+      <p>SHIFT: remove the first item from an array.</p>
+      <pre>
+        <code>
+          var colors = ["red", "green", "blue"];
+          colors.shift();
+          // ["green", "blue"]
+
+          // shift() also returns the removed el
+          var colGreen = colors.shift(); // "green"
+        </code>
+      </pre>
+      <p>UNSHIFT: add to the front of an array.</p>
+      <pre>
+        <code>
+          var colors = ["red", "green", "blue"];
+          colors.unshift("yellow");
+          // ["yellow", "red", "green", "blue"]
+        </code>
+      </pre>
+      <br>
+      <li>
+        <strong>indexOf</strong>
+      </li>
+      <p>INDEXOF: find the index of an item in an array</p>
+      <pre>
+        <code>
+          var friends = ["Jose", "Morlis", "Alvaro", "Irene", "Carlos"];
+          friends.indexOf("Alvaro"); // 2
+
+          // return -1 if the element is not present
+          friends.indexOf("Felipe"); // -1
+        </code>
+      </pre>
+      <br>
+      <li>
+        <strong>slice</strong>
+      </li>
+      <p>SLICE: copy a part of an array.</p>
+      <pre>
+        <code>
+          var fruits = ["banana", "lemon", "orange", "apple", "mango"];
+          var citrus = fruits.slice(1, 3);
+          // citrus = ["lemon", "orange"];
+          // slice() doesn't modify the original array
+
+          // You can use slice() to copy an entire array
+          var nums = [1, 2, 3, 4];
+          var otherNums = nums.slice();
+          // otherNums = [1, 2, 3, 4]
+        </code>
+      </pre>
+    </ul>
+    <br>
+    <h4>Array Iteration</h4>
+    <p></p>
   </ol>
 
 </body>
