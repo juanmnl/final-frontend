@@ -1,5 +1,11 @@
 # WIP The Final Frontend
 
+### The Web
+
+### Html
+
+### CSS
+
 ### JavaScript Park
 
 * INTRO
@@ -30,7 +36,7 @@
 
 * JS Modules
 
-* NPM@3
+* NPM@5
 
 * WEBPACK
 

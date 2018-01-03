@@ -450,6 +450,135 @@
     <li>
       <h3>Functions</h3>
     </li>
+    <p>Wrap bits of code into reusable packages. One of the building blocks of JS.</p>
+    <pre>
+      <code>
+        // Function Declaration
+        function doSomething() {
+          console.log('Do it!');
+        }
+
+        // Function Expression
+        var doSomething = function() {
+          console.log('Do it!');
+        }
+
+        // Referring a fn()
+        doSomething;
+
+        // Calling/Executing a fn()
+        doSomething();
+      </code>
+    </pre>
+    <br>
+    <h4>Arguments</h4>
+    <p>A value we pass to a fn(val).</p>
+    <pre>
+      <code>
+        // With one argument
+        function square(num) {
+          console.log(num * num);
+        }
+
+        square(10); // 100
+        square(3); // 9 
+
+        // Multiple arguments
+        function area(length, width) {
+          console.log(length * width);
+        }
+
+        area(9,2) // 18
+      </code>
+    </pre>
+    <br>
+    <h4>The Return keyword</h4>
+    <p>Sending back the output value of a fn().</p>
+    <p>
+      <em>Input -> function() -> Output</em>
+    </p>
+    <pre>
+      <code>
+        function square(n) {
+          return n * n;
+        }
+
+        "The square of 101 is: " + square(101);
+        // "The square of 101 is: 10201"
+
+        // fn() that capitalizes the first char of a given string
+        function capitalize(str) {
+          if(typeof str === "number") {
+            return "That's not a string!"
+          }
+          return str.charAt(0).toUpperCase() + str.slice(1);
+        }
+
+        var city = "quito";
+        capitalize(city); // "Quito"
+        capitalize(22); // "That's not a string!"
+
+        // Ex.
+        function isEven(n) {
+          if(n%2===0) {
+            return true;
+          } else {
+            return false;
+          }
+        }
+        
+        // Ex shortcut
+        function isEven(n) {
+          return n % 2 === 0;
+        }
+
+        // Ex2
+        function factorial(num) {
+          var result = 1;
+          for(var i = 2; i &lt;= num; i++) {
+            result *= i;
+          }
+          return result;
+        }
+
+        // Ex3
+        function kebabToSnake(str){
+          var nuStr str.replace(/-/g, "_");
+          return nuStr;
+        }
+      </code>
+    </pre>
+    <br>
+    <h4>Scope</h4>
+    <p>The context the code is executed in.</p>
+    <p>
+      <em>Global Scope vs. Local Scope</em>
+    </p>
+    <pre>
+      <code>
+        // Global Scope
+        var x = 10;
+
+        function someMath() {
+          console.log(x);
+        }
+
+        someMath(); // 10
+
+        // Local Scope
+        var x = 10;
+        function moreMath() {
+          var x = 99;
+          console.log(x);
+        }
+
+        moreMath(); // 99
+      </code>
+    </pre>
+    <p>Global scopes can be used inside a fn() but local scopes cannot be used outside a fn().</p>
+    <br>
+    <h4>Higher Order Functions</h4>
+    <p>Functions that take a fn() as an argument, or return another fn().</p>
   </ol>
 
 </body>
