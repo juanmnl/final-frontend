@@ -626,7 +626,7 @@
     </pre>
     <br>
     <h4>Built-in Methods</h4>
-    <p>JS has many built-in methods to manipulate arrays. These are the 6 most common.</p>
+    <p>JS has many built-in methods to manipulate arrays.</p>
     <ul>
       <li>
         <strong>push/pop</strong>
@@ -703,6 +703,19 @@
           var nums = [1, 2, 3, 4];
           var otherNums = nums.slice();
           // otherNums = [1, 2, 3, 4]
+        </code>
+      </pre>
+      <br>
+      <li>
+        <strong>splice</strong>
+      </li>
+      <p>SPLICE: remove part of an array.</p>
+      <pre>
+        <code>
+          var fruits = ["banana", "lemon", "tomato", "broccoli", "apple", "mango"];
+          var veggies = fruits.splice(2, 2); // index, quantity
+          // veggies = ["tomato", "broccoli"];
+          // fruits = ["banana", "lemon", "apple", "mango"]
         </code>
       </pre>
     </ul>
