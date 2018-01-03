@@ -708,8 +708,73 @@
     </ul>
     <br>
     <h4>Array Iteration</h4>
-    <p></p>
+    <ul>
+      <li>
+        <strong>while loop
+          <em>(not common)</em>
+        </strong>
+      </li>
+      <pre>
+        <code>
+          var colors = ["green", "red", "green", "blue", "yellow"];
+          var count = 0;
+          while(count &lt; colors.length) {
+            console.log(colors[i]);
+            count++;
+          }
+          // green
+          // red
+          // green
+          // blue
+          // yellow
+        </code>
+      </pre>
+      <br>
+      <li>
+        <strong>for loop
+          <em>(not common)</em>
+        </strong>
+      </li>
+      <pre>
+        <code>
+          var colors = ["green", "red", "green", "blue", "yellow"];
+          for(var i = 0; i &lt; colors.length; i++) {
+            console.log(colors[i]);
+          }
+          // green
+          // red
+          // green
+          // blue
+          // yellow
+        </code>
+      </pre>
+      <br>
+      <li>
+        <strong>forEach
+          <em>(preferred)</em>
+        </strong>
+      </li>
+      <p>Part of the array prototype.</p>
+      <pre>
+        <code>
+          arr.forEach(someFunction);
+          //
+          var colors = ["green", "red", "green", "blue", "yellow"];
+          
+          colors.forEach(function(color) {
+            console.log(color);
+          })
+          // green
+          // red
+          // green
+          // blue
+          // yellow
+        </code>
+      </pre>
+    </ul>
   </ol>
+
+  <script src="index.js" type="text/javascript"></script>
 
 </body>
 
