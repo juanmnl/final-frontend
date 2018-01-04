@@ -601,7 +601,7 @@
     <li>
       <h3>Arrays</h3>
     </li>
-    <p>The first Data Structure. Group data in comma-separated lists.</p>
+    <p>[Data Structure] - Group data in comma-separated lists.</p>
     <p>Arrays are zero-indexed.</p>
     <pre>
       <code>
@@ -784,11 +784,105 @@
           // yellow
         </code>
       </pre>
+      <hr>
+      <li>
+        <h3>Objects</h3>
+      </li>
+      <p>{Data Structure} - key/value pair properties.</p>
+      <p>Objects can hold all sorts of data.</p>
+      <pre>
+        <code>
+          // Initialize an object
+          var person = new Object();
+          var person = {};
+
+          // Populate the object
+          person.name = "Ricardo";
+          ...
+          //
+          var person = {
+            name: "Ricardo",
+            age: 39,
+            city: "Quito"
+          };
+
+          // Bracket notation
+          console.log(person["name"]); // "Ricardo"
+
+          // Dot notation -> Best way
+          console.log(person.age); // 39
+
+          // Update values
+          var dog = {
+            name: 'thom',
+            age: 4,
+            breed: 'Delmer',
+            birthday: '2013/24/05'
+          };
+
+          dog.name = "Thom"; // "Thom"
+          dog["age"] += 1; // 5
+        </code>
+      </pre>
+      <p>
+        <em>Cannot use dot notation when:</em>
+      </p>
+      <ul>
+        <li>Property starts with a number</li>
+        <li>Property has spaces in its</li>
+        <li>Looking up for a variable</li>
+      </ul>
+      <p>In other languajes, objects are known as
+        <strong>dictionaries</strong>.
+      </p>
+      <br>
+      <h4>Object Methods</h4>
+      <p>A method is just a function as a value of a property of the object:</p>
+      <pre>
+        <code>
+          var obj = {
+            name: "Han Solo",
+            age: 49,
+            isCool: false,
+            friends: ['Chewie', 'R2D2'],
+            speak: function(name) {
+              return "hello " + name + "!";
+            }
+          }
+
+          console.log(obj.speak("C3P0"));
+          // "hello C3P0!"
+        </code>
+      </pre>
+      <br>
+      <h4>Keyword
+        <em>this</em>
+      </h4>
+      <p>
+        <em>this</em> refers to the context in which the code is executed.</p>
+      <pre>
+        <code>
+          var comments = {
+            data: ["Nice!", "Boring", "Learned a lot :)"],
+            print: function() {
+              this.data.forEach(function(el) { // this refers to the object
+                console.log(el);
+              });
+            }
+          };
+
+          comments.print();
+          // "Nice!"
+          // "Boring"
+          // "Learned a lot! :)"
+        </code>
+      </pre>
+      <br>
+      <p>
+        <strong>*Namespace Collision:</strong> when two methods are named the same and override each other.</p>
     </ul>
   </ol>
-
   <script src="index.js" type="text/javascript"></script>
-
 </body>
 
 </html>

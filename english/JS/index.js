@@ -1,4 +1,9 @@
-// ARRAYS -----------------
+console.log(
+  'There are some fns, objects and arrays defined so you can play with:'
+);
+
+// ******** ARRAYS ********
+
 var colors = ['red', 'green', 'blue', 'yellow'];
 var friends = ['Tron', 'Morlis', 'Alvaro', 'Irene', 'Carlos'];
 
@@ -58,6 +63,84 @@ var nums = [10, 12, 34, 154, 23, -109, 45];
 var nums2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 var uni = [2, 2, 2, 2, 2];
 
-console.log(sumArray(nums));
-console.log(printReverse(nums2));
-console.log(max(nums2));
+// console.log(sumArray(nums));
+// console.log(printReverse(nums2));
+// console.log(max(nums2));
+
+// ******** OBJECTS ********
+
+var person = {
+  name: 'Ricardo',
+  age: 39,
+  city: 'Quito'
+};
+
+var dog = {
+  name: 'thom',
+  age: 4,
+  breed: 'Delmer',
+  birthday: '2013/24/05'
+};
+
+// ******** ARRAYS + OBJECTS ********
+
+var movies = [
+  {
+    title: 'Blade Runner 2049',
+    rating: 4.5,
+    hasWatched: true
+  },
+  {
+    title: 'The Hobbit',
+    rating: 4,
+    hasWatched: true
+  },
+  {
+    title: 'La la what?',
+    rating: 2,
+    hasWatched: false
+  },
+  {
+    title: 'Starship',
+    rating: 3,
+    hasWatched: false
+  },
+  {
+    title: 'Alien',
+    rating: 5,
+    hasWatched: true
+  }
+];
+
+// Excercise
+// movies.forEach(function(movie) {
+//   console.log(buildString(movie));
+// });
+
+// function buildString(movie) {
+//   var result = 'You have';
+//   if (movie.hasWatched) {
+//     result += ' watched ';
+//   } else {
+//     result += ' not seen ';
+//   }
+//   result += "'" + movie.title + "'";
+//   result += ' - ' + movie.rating + ' stars.';
+//   return result;
+// }
+
+console.dir({
+  colors,
+  friends,
+  cadunCadun,
+  person,
+  dog,
+  movies,
+  nums,
+  nums2,
+  uni,
+  printReverse,
+  max,
+  isUniform,
+  sumArray
+});

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>The DOM</title>
+  <link rel="stylesheet" href="./../../main.css">
+</head>
+
+<body>
+  <div class="back">
+    <a href="./../../index.html">Index</a>
+  </div>
+  <h2>The DOM</h2>
+  <p>The Document Object Model is the interface where JS meets HTML and CSS.</p>
+  <ul>
+    <li>Every HMTL tag turns into a JS object that we can manipulate</li>
+    <li>Stored inside de
+      <em>document (check your console)</em> Object
+    </li>
+    <li>
+      <strong>Select</strong> an element and then
+      <strong>manipulate</strong>
+    </li>
+  </ul>
+  <pre>
+    <code>
+      // Select an element
+      var header = document.querySelector("h1");
+
+      // Manipulate the selection
+      header.style.color = "rebeccapurple";
+    </code>
+  </pre>
+  <hr>
+  <pre>
+      <code>
+        // Select an element
+        var body = document.querySelector("body");
+        var isPurple = false;
+  
+        // Manipulate the selection
+        setInterval(function(){
+          if(isPurple) {
+            body.style.background = "coral";
+          } else {
+            body.style.background = "rebeccapurple";
+          }
+          isPurple = !isPurple;
+        }, 2000);
+      </code>
+    </pre>
+  <br>
+  <ol>
+    <li>
+      <h3>DOM Selection</h3>
+    </li>
+    <p>Everything revolves around the
+      <em>document.</em>
+    </p>
+    <h4>Direct Selection</h4>
+    <ul>
+      <li>
+        <strong>document.URL</strong>
+      </li>
+      <li>
+        <strong>document.body</strong>
+      </li>
+      <li>
+        <strong>document.head</strong>
+      </li>
+      <li>
+        <strong>document.links</strong>
+      </li>
+    </ul>
+    <h4>Methods</h4>
+    <ul>
+      <li>
+        <strong>document.getElementById("id");</strong>
+      </li>
+      <li>
+        <strong>document.getElementsByClassName("class");</strong>
+      </li>
+      <li>
+        <strong>document.getElementsByTagName("tag");</strong>
+      </li>
+      <li>
+        <strong>document.querySelector("css-style-selector");</strong>
+      </li>
+      <li>
+        <strong>document.querySelectorAll("css-style-selector");</strong>
+      </li>
+    </ul>
+    <br>
+    <li>
+      <h3>DOM Manipulation</h3>
+    </li>
+    <ul>
+      <li>Changing styles</li>
+      <li>Adding/Removing classes</li>
+      <li>Changing the content of a tag</li>
+      <li>Changing attributes of a tag</li>
+    </ul>
+    <br>
+    <ul>
+      <li>
+        <h4>Manipulating Style</h4>
+      </li>
+      <pre>
+        <code>
+          // Pure JS
+          var tag = document.getElementById("highlight");
+  
+          tag.style.color = "black";
+          tag.style.background = "yellow";
+          tag.style.fontSize = "3em";
+          tag.style.marginTop = "1em";
+
+          // ******************************************
+          // Alternative with CSS classes
+          // CSS
+          .some-class {
+            color: black;
+            background: yellow;
+            font-size: 3em;
+            margin-top: 1em;
+          }
+          // JS
+          var tag = document.getElementById("highlight");
+          // Add class
+          tag.classList.add("some-class");
+          // Remove class
+          tag.classList.remove("some-class");
+          // Check if has class and toggle
+          tag.classList.toggle("some-class"); 
+        </code>
+      </pre>
+      <br>
+      <li>
+        <h4>Manipulating Text and Content</h4>
+      </li>
+      <ul>
+        <li>
+          <strong>textContent</strong>
+        </li>
+        <li>
+          <strong>innerHTML - ⚠️</strong>
+        </li>
+        <li>
+          <strong>innerText</strong>
+        </li>
+      </ul>
+      <pre>
+        <code>
+          var tag = document.querySelector("p");
+
+          // Retrieve content
+          tag.textContent; // "This is a paragraph."
+          // Change content
+          tag.textContent = "This is the new text, ha!";
+        </code>
+      </pre>
+      <br>
+      <li>
+        <h4>Manipulating Attributes</h4>
+      </li>
+      <ul>
+        <li>
+          <strong>getAttribute()</strong>
+        </li>
+        <li>
+          <strong>setAttribute()</strong>
+        </li>
+      </ul>
+      <pre>
+        <code>
+          var link = document.querySelector("a");
+          link.getAttribute("href");
+          // a href="www.blabla.com"
+          link.setAttribute("href", "http://www.dogs.com");
+          // a href="http://www.dogs.com"
+
+          var img = document.querySelector("img");
+          img.setAttribute("src", "cats.png");
+          // img src="cats.png"
+        </code>
+      </pre>
+    </ul>
+    <br>
+  </ol>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

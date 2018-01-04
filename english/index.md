@@ -8,12 +8,10 @@
 
 ### JavaScript Park
 
-* INTRO
-* Intro programming
+* Primitives
 * Statements
 * Expressions
 * Execution of a program
-* The Input.Output Game
 
 - SYNTAX
 - Operators
