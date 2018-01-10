@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>jQuery</title>
+  <link rel="stylesheet" href="./../../main.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="back">
+    <a href="./../../index.html">Index</a>
+  </div>
+  <h2>jQuery</h2>
+  <p>The DOM manipulation library.</p>
+  <ul>
+    <li>Most used library JS/Dom library in the 🌎</li>
+    <li>Strong debate wheter to use it or not</li>
+    <li>AJAX still very relevant</li>
+    <li>This page includes jQuery</li>
+  </ul>
+  <ol>
+    <li>
+      <h3>Including the library</h3>
+    </li>
+    <p>
+      Download it and link it locally.
+    </p>
+    <pre>
+      <code>
+        &lt;script type="text/javascript" src="jquery.js"&gt;&lt;/script&gt;
+      </code>
+    </pre>
+    <p>
+      Link to a CDN
+      <em>(hosted copy)</em>.
+    </p>
+    <pre>
+      <code>
+        &lt;script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"&gt;&lt;/script&gt;
+      </code>
+    </pre>
+    <p>jQuery preview:</p>
+    <pre>
+      <code>
+        $('#trigger').click(function() {
+          $('body').css('background', 'coral');
+          $('img').fadeOut(3000, function() {
+            $(this).remove();
+          });
+        });
+      </code>
+    </pre>
+    <hr>
+    <li>
+      <h3>Selectors</h3>
+    </li>
+    <ul>
+      <li>
+        <strong>$</strong> - the dollar sign function</li>
+      <li>It's like
+        <em>document.querySelectorAll</em>
+      </li>
+      <li>Uses a css-style selector</li>
+      <li>Returns a DOM list []</li>
+    </ul>
+    <pre>
+      <code>
+        $('selectorGoesHere');
+        //
+        $('#id');
+        $('.class');
+        $('p');
+        $('p > a');
+      </code>
+    </pre>
+    <hr>
+    <li>
+      <h3>Common Methods</h3>
+    </li>
+    <p>
+      <a href="http://api.jquery.com">See all methods...</a>
+    </p>
+    <ul>
+      <li>
+        <strong>.css()</strong>
+      </li>
+      <p>Modify the styling of an element.</p>
+      <pre>
+        <code>
+          $(selector).css(property, value);
+          //
+          $('h2').css('color', 'teal');
+          //
+          var styles = {
+            background: 'coral',
+            color: 'teal'
+          };
+          $('body').css(styles);
+        </code>
+      </pre>
+      <br>
+      <li>
+        <strong>.text()</strong>
+      </li>
+      <p>Get/Set the combined text content of every matched element.</p>
+      <pre>
+        <code>
+          $(selector).text(); // gets value
+          $(selector).text('New string!'); // Sets value "New string!"
+        </code>
+      </pre>
+      <br>
+      <li>
+        <strong>.html()</strong>
+      </li>
+      <p>Get/Set the combined HTML content of every matched element.</p>
+      <pre>
+        <code>
+          $(selector).html(); // Get HTML value
+          $(selector).html('&lt;div&gt;Hello!&lt;/div&gt;'); // Sets new HTML 
+        </code>
+      </pre>
+      <br>
+      <li>
+        <strong>.val()</strong>
+      </li>
+      <p>Get/Set the value from an element that has values (input, select).</p>
+      <pre>
+        <code>
+          $(selector).val();
+          //
+          $('select.foo').val(); // Extracts value of select.foo el
+          $('input').val(''); // Clears input
+        </code>
+      </pre>
+      <br>
+      <li>
+        <strong>.attr()</strong>
+      </li>
+      <p>Get/Set the value of an attribute of the first matched element.</p>
+      <pre>
+        <code>
+          $(selector).attr(attribute);
+          $('input').attr('type'); // "text"
+          $('img').attr('alt', 'This is an image!');
+        </code>
+      </pre>
+      <br>
+      <li>
+        <strong>.addClass()</strong>
+      </li>
+      <p>Adds a class to an element
+        <em>or a collection of els</em>.</p>
+      <pre>
+        <code>
+          $(selector).addClass('new-class');
+        </code>
+      </pre>
+      <br>
+      <li>
+        <strong>.removeClass()</strong>
+      </li>
+      <p>Removes a class from an element
+        <em>or a collection of els</em>.</p>
+      <pre>
+        <code>
+          $(selector).removeClass('new-class');
+        </code>
+      </pre>
+      <br>
+      <li>
+        <strong>.toggleClass()</strong>
+      </li>
+      <p>Toggles the class of an element
+        <em>or a collection of els</em>.</p>
+      <pre>
+        <code>
+          $(selector).toggleClass('active');
+        </code>
+      </pre>
+    </ul>
+    <hr>
+    <li>
+      <h3>Common Events</h3>
+    </li>
+    <p>
+      <a href="http://api.jquery.com/category/events">See all events...</a>
+    </p>
+    <ul>
+      <li>
+        <strong>.click()</strong>
+      </li>
+      <p>Add a click listener to a single element
+        <em>or a collection of els</em> that currently exist on the page.</p>
+      <pre>
+        <code>
+          $(selector).click(cb);
+          //
+          $('button').click(function() {
+            // Use the JQ version of `this`
+            $(this).css('color', 'coral');
+          });
+        </code>
+      </pre>
+      <br>
+      <li>
+        <strong>.keypress()</strong>
+      </li>
+      <p>Add a keypress listener to a single element
+        <em>or a collection of els</em>.</p>
+      <pre>
+        <code>
+          $(selector).keypress(cb);
+          //
+          $('input').keypress(function(e) {
+            if(e.which === 13) {
+              console.log('Yeah! Enter!');
+            }
+          });
+        </code>
+      </pre>
+      <br>
+      <li>
+        <strong>.on()</strong>
+      </li>
+      <p>Add a listener to a single element
+        <em>or a collection of els</em> and all future elements.</p>
+      <pre>
+        <code>
+          $(selector).on(event, cb);
+          //
+          $('button').on('mouseenter', function() {
+            $(this).css('font-weight', '900');
+          });
+          $('button').on('mouseleave', function() {
+            $(this).css('font-weight', 'normal');
+          });
+        </code>
+      </pre>
+    </ul>
+    <hr>
+    <li>
+      <h3>Effects</h3>
+    </li>
+    <p>
+      <a href="http://api.jquery.com/category/effects">See all effects...</a>
+    </p>
+    <ul>
+      <li>
+        <strong>.fadeIn() / .fadeOut()</strong>
+      </li>
+      <p>Add a fade-in / fade-out effect to a single element
+        <em>or a collection of els</em>.</p>
+      <pre>
+        <code>
+          $(selector).fadeOut(duration, cb);
+          //
+          $('div').fadeOut(3000, function() {
+            $(this).remove();
+          });
+        </code>
+      </pre>
+      <br>
+    </ul>
+  </ol>
+  <script src="index.js"></script>
+</body>
+
+</html>
